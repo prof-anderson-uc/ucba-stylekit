@@ -1,128 +1,167 @@
-/*	
-	Filename:		  reset.css
-	Description:	Resets default HTML styles across browsers
-                & adds Print Styles
+/*
+  UCBA Stylekit Reset CSS
+  Based on Eric Meyer's Reset v2.0 + Modern Enhancements
+  Adjusted for clarity, accessibility, and student learning
 */
 
 
 /* MARGINS, PADDING & FONT SIZE 
-------------------------------------------- */
+------------------------------ */
+/* Reset default styles for nearly all HTML elements
+   Ensures a consistent baseline across all browsers */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, font, img, ins, kbd, q, s, samp,
-small, strike, sub, sup, tt, var,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; /* remove browser-default text sizes */
+  font: inherit;     /* inherit font family from body */
+  vertical-align: baseline;
 }
 
-address,caption,cite,code,dfn,th,var {
-	font-style:normal;
-	font-weight:normal;
+/* Ensure older browsers display HTML5 elements as block */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
+/* Improve line height for default body copy */
 body {
-	line-height: 1;
+  font-size: 1rem;
+  line-height: 1.3; /* Adds a little room between lines of text */
 }
 
+/* Add a space below paragraphs */
 p {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
+/* Hide elements with [hidden] attribute (HTML5 spec) */
+[hidden] {
+  display: none;
+}
 
 
 /*  TABLES 
 ------------------------------------------- */
+/* Bold captions and headers, left-align text */
 caption,
 th {
-	font-weight: bold;
-	text-align:left;
+  font-weight: bold;
+  text-align: left;
 }
 
+/* Remove spacing between table cells */
 table {
-	border-collapse:collapse;
-	border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 
-
-/*  FORMS
-------------------------------------------- */
+/* FORMS
+------------------------------ */
+/* Ensure visible form grouping and spacing */
 fieldset {
-	border: 1px solid black;
-	padding: 1em;
+  border: 1px solid black;
+  padding: 1em;
 }
 
+/* Bold legend text */
 legend {
-	font-weight: bold;
+  font-weight: bold;
+}
+
+/* Inherit font styles for form inputs */
+button, input, select, textarea {
+  font: inherit;
+}
+
+/* Improve keyboard navigation visibility for accessibility */
+:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
 }
 
 
-
-/* BORDERS 
-------------------------------------------- */
+/* IMAGE STYLES
+------------------------------ */
+/* Remove image borders (common in IE/old HTML) */
 img {
-	border:0;
+  border: 0;
 }
 
+/* Prevents weird spacing in old browsers */
+a img {
+   border: 0;
+ }
 
+ /* Utility class to add block-level display to images */
+.img-block {
+   display: block;
+ }
+ 
+
+
+
+/* MISCELLANEOUS
+------------------------------ */
+/* Show "help cursor" when hovering over abbreviations */
 abbr[title] {
-	cursor:help;
-}
+   cursor: help;
+ }
 
-
-/* MISCELLANEOUS 
-------------------------------------------- */
-
+/* Strike-through for <del> text */
 del {
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 
-blockquote, 
-q {
-	quotes: none;
+/* Remove default quotation marks */
+blockquote, q {
+  quotes: none;
 }
 
-blockquote:before, 
-blockquote:after,
-q:before,
-q:after {
-	content: " ";
-	content: none;
+/* Clear quote characters manually */
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
 }
 
+/* Italicize definitions */
 dfn {
-    font-style: italic;
+  font-style: italic;
 }
 
-code,
-kbd,
-pre,
-samp {
-    font-family: monospace, serif;
+/* Monospace font for code-related tags */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
 }
 
+/* Wrap long lines in <pre> tags */
 pre {
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word; /* Break long strings if needed to avoid overflow */
 }
 
-
+/* Resize small text */
 small {
   font-size: 80%;
 }
 
-sub,
-sup {
+/* Proper sub/sup positioning */
+sub, sup {
   position: relative;
   font-size: 75%;
   line-height: 0;
@@ -137,66 +176,93 @@ sub {
   bottom: -.25em;
 }
 
+/* Style highlight marker */
 mark {
   color: #000;
   background: #ff0;
 }
 
+/* Pointer cursor for <summary> elements */
 details summary {
   cursor: pointer;
 }
 
+/* Ensure inline layout for elements inside <summary> */
 details summary > * {
   display: inline;
 }
 
+/* Remove bottom spacing on last paragraph inside details */
 details p:last-of-type {
   margin-bottom: 0;
 }
 
-nav ul {
-  list-style:none;
+hr {
+   border: none;
+   border-top: 1px solid #ccc;
+   margin: 1em 0;
+ }
+ 
+ button {
+   cursor: pointer; /* Makes buttons show a hand cursor like links */
+ }
+
+
+/* MODERN ENHANCEMENTS
+------------------------------ */
+/* Applies box-sizing to all elements and their pseudo-elements */
+/* Use border-box for all layout calculations */
+*, *::before, *::after {
+  box-sizing: border-box; 
+}
+
+/* Prevent media from overflowing their containers */
+img, picture, video, canvas, svg {
+  max-width: 100%; /* Scales down to fit container */
+  height: auto; /* Preserves aspect ratio */
+}
+
+/* Reduce animation for users with motion sensitivity */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 
 
-/* PRINT STYLES
-------------------------------------------- */
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+/*  PRINT STYLES
+------------------------------ */
 
 @media print {
-  *,
-  *:before,
-  *:after {
+  *, *:before, *:after {
     color: #000 !important;
     text-shadow: none !important;
     background: transparent !important;
     -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
   }
 
-  a,
-  a:visited {
+  a, a:visited {
     text-decoration: underline;
   }
 
-  a[href]:after {
+  a[href]::after {
     content: " (" attr(href) ")";
   }
 
-  abbr[title]:after {
+  abbr[title]::after {
     content: " (" attr(title) ")";
   }
 
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
     content: "";
   }
 
-  pre,
-  blockquote {
+  pre, blockquote {
     border: 1px solid #999;
-
     page-break-inside: avoid;
   }
 
@@ -204,24 +270,20 @@ nav ul {
     display: table-header-group;
   }
 
-  tr,
-  img {
+  tr, img {
     page-break-inside: avoid;
   }
-  
+
   img {
     max-width: 100% !important;
   }
 
-  p,
-  h2,
-  h3 {
+  p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  h2,
-  h3 {
+  h2, h3 {
     page-break-after: avoid;
   }
 
@@ -229,6 +291,7 @@ nav ul {
     background: #fff !important;
   }
 
+  nav,
   .navbar {
     display: none;
   }
@@ -255,9 +318,11 @@ nav ul {
   .table-bordered td {
     border: 1px solid #ddd !important;
   }
-
 }
 
-
-
-/* last updated 9/1/22 */
+/*
+  Created by Professor Eric Anderson
+  University of Cincinnati
+  https://github.com/prof-anderson-uc
+  Last updated: April 10, 2025
+*/
