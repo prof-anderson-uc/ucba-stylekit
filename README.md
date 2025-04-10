@@ -4,6 +4,9 @@ UCBA Stylekit is a simple, beginner-friendly CSS toolbox created for students in
 
 It provides ready-to-use class-based styles that help you create visually appealing, responsive websites — without needing to learn a full CSS framework like Bootstrap.
 
+## Live Demo
+[Examples of Stylekit Styles](https://prof-anderson-uc.github.io/ucba-stylekit/)
+
 ---
 
 ## ✨ What It Can Do
