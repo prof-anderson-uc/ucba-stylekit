@@ -4,51 +4,6 @@
    Title: Professor at the University of Cincinnati
    GitHub: https://github.com/prof-anderson-uc
    Last Updated: April 9, 2025
-   Note: Designed to be used AFTER a reset.css
-   =================================== */
-
-/* === Base Reset Overrides === */
-
-/* Restore useful body defaults removed by reset.css */
-body {
-   line-height: 1.6;  /* improve readability */
-   background-color: #fff;
-   color: #000;
- }
- 
- /* Restore list style for normal lists (not list-groups) */
- ul:not(.list-group), ol:not(.list-group) {
-   list-style: disc;
-   margin-left: 1.5rem;
- }
- 
- /* Restore heading spacing if reset removed it */
- h1, h2, h3, h4, h5, h6 {
-   margin-bottom: 0.5rem;
-   font-weight: bold;
-   line-height: 1.2;
- }
- 
- /* Restore default spacing for paragraphs */
- p {
-   margin-bottom: 1rem;
- }
- 
- /* Reintroduce quotes for blockquotes if reset removed them */
- blockquote:before, blockquote:after,
- q:before, q:after {
-   content: '';
- }
- 
- /* === Stylekit starts here (already organized) === */
- 
-
-/* ===================================
-   UCBA Stylekit CSS
-   Created by: Eric Anderson
-   Title: Professor at the University of Cincinnati
-   GitHub: https://github.com/prof-anderson-uc
-   Last Updated: April 9, 2025
    =================================== */
 
 /* === Layout === */
