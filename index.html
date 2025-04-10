@@ -34,7 +34,88 @@
 </head>
 
 <body>
-   <h1 class="heading text-center">UCBA Stylekit Demo</h1>
+   <h1 class="text-center">UCBA Stylekit Demo</h1>
+
+    <!-- TYPOGRAPHY -->
+    <section class="demo">
+      <h2>Typography</h2>
+      <div class="demo-block">
+
+         <p class="text-sm">This is small text using <code>.text-sm</code></p>
+         <p class="text-lg">This is large text using <code>.text-lg</code></p>
+         <p class="bold">This text is bold with <code>.bold</code></p>
+         <p class="italic">This text is italic with <code>.italic</code></p>
+         <p class="uppercase">This is uppercase using <code>.uppercase</code></p>
+         <p class="lead">This is a lead paragraph with <code>.lead</code></p>
+         <p class="text-muted">This is muted text using <code>.text-muted</code></p>
+         <p class="text-primary">This text has the defined primary-color using <code>.text-primary</code></p>
+
+      </div>
+   </section>
+
+   <section class="demo">
+      <h2>Font Families</h2>
+      <div class="demo-block">
+
+         <p class="text-serif">This is serif text (e.g., Georgia) using <code>.text-serif</code>.</p>
+         <p class="text-mono">This is monospace text (e.g., Courier) using <code>.text-mono</code>.</p>
+
+      </div>
+   </section>
+
+   <section class="demo">
+      <h2>Text Alignment (Left / Right)</h2>
+      <div class="demo-block">
+
+         <p class="text-left">This paragraph is <strong>left-aligned</strong> using <code>.text-left</code>.</p>
+         <p class="text-right">This paragraph is <strong>right-aligned</strong> using <code>.text-right</code>.</p>
+
+      </div>
+   </section>
+
+
+    <!-- TEXT EFFECTS -->
+    <section class="demo">
+      <h2>Text Effects</h2>
+      <div class="demo-block">
+
+         <p class="shadow-text">This text has a shadow using <code>.shadow-text</code></p>
+         <p class="highlight">This text is highlighted with <code>.highlight</code></p>
+         <p class="quote">This is a block quote style using <code>.quote</code></p>
+         <p>This is <span class="code-text">inline code</span> using <code>.code-text</code></p>
+
+      </div>
+   </section>
+
+
+
+   <section class="demo">
+      <h2>Headings</h2>
+      <div class="demo-block">
+         <p>These are the default styles of the headings:</p>
+
+         <h1>I'm an h1</h1>
+
+         <br><!-- ⬅︎ ignore this -->
+
+         <h2>I'm an h2</h2>
+
+         <br><!-- ⬅︎ ignore this -->
+         
+         <h3>I'm an h3</h3>
+
+         <br><!-- ⬅︎ ignore this -->
+
+         <h4 class="heading-underline">This is an Underlined Heading</h4>
+         <p>Any heading can be given an underline by giving it the class  <code>.heading-underline</code></p>
+
+
+      </div>
+   </section>
+
+
+
+
 
    <!-- CARD EXAMPLE -->
    <section class="demo">
@@ -67,21 +148,21 @@
       <h2>Hero Banners</h2>
       <div class="demo-block">
 
-   <section class="hero-banner" style="background-image: url('https://picsum.photos/id/1005/1600/900');">
-      <div class="hero-text">
-         <h2>A "Hero Banner" is a large image with text overtop</h2>
-         <p>often placed near the top of a webpage</p>
-      </div>
-   </section>
+         <section class="hero-banner" style="background-image: url('https://picsum.photos/id/1005/1600/900');">
+            <div class="hero-text">
+               <h2>A "Hero Banner" is a large image with text overtop</h2>
+               <p>often placed near the top of a webpage</p>
+            </div>
+         </section>
 
-   <br><!--  ⬅︎ Ignore this, it isn't part of the hero banners -->
+         <br><!-- ⬅︎ Ignore this, it isn't part of the hero banners -->
 
-   <section class="hero-banner" style="background-image: url('https://picsum.photos/id/1018/1600/900');">
-      <div class="hero-text">
-         <h2>Another Section with a Unique Image</h2>
-         <p>Same layout, different photo — no new CSS needed</p>
-      </div>
-   </section>
+         <section class="hero-banner" style="background-image: url('https://picsum.photos/id/1018/1600/900');">
+            <div class="hero-text">
+               <h2>Another Section with a Unique Image</h2>
+               <p>Same layout, different photo — no new CSS needed</p>
+            </div>
+         </section>
 
       </div>
    </section>
@@ -157,32 +238,7 @@
       </div>
    </section>
 
-   <!-- TYPOGRAPHY -->
-   <section class="demo">
-      <h2>Typography</h2>
-      <div class="demo-block">
-
-         <p class="text-sm">This is small text using <code>.text-sm</code></p>
-         <p class="text-lg">This is large text using <code>.text-lg</code></p>
-         <p class="bold">This text is bold with <code>.bold</code></p>
-         <p class="italic">This text is italic with <code>.italic</code></p>
-         <p class="uppercase">This is uppercase using <code>.uppercase</code></p>
-         <h3>This is a heading with <code>.heading</code></h3>
-         <p class="subheading">This is a subheading using <code>.subheading</code></p>
-         <p class="lead">This is a lead paragraph with <code>.lead</code></p>
-         <p class="text-muted">This is muted text using <code>.text-muted</code></p>
-         <p class="text-primary">This is primary-colored text using <code>.text-primary</code></p>
-
-      </div>
-   </section>
-
-   <!-- Heading Underline Example -->
-   <div class="demo-block">
-      <h3>Heading Underline Example</h3>
-      <h2 class="heading-underline">This is an Underlined Heading</h2>
-      <p>This heading uses the <code>.heading-underline</code> class to create a bold underline using <code>border-bottom</code>.</p>
-   </div>
-
+  
 
    <!-- BUTTONS -->
    <section class="demo">
@@ -209,35 +265,28 @@
       </div>
    </section>
 
-   <!-- COLORS -->
-   <section class="demo">
-      <h2>Color Utilities</h2>
-      <div class="demo-block">
 
-         <p class="bg-light">This is a light background using <code>.bg-light</code></p>
-         <p class="bg-dark">This is a dark background using <code>.bg-dark</code></p>
-         <p class="bg-primary">This is a primary color background using <code>.bg-primary</code></p>
 
-      </div>
-   </section>
+  
 
-   <!-- TEXT EFFECTS -->
-   <section class="demo">
-      <h2>Text Effects</h2>
-      <div class="demo-block">
 
-         <p class="shadow-text">This text has a shadow using <code>.shadow-text</code></p>
-         <p class="highlight">This text is highlighted with <code>.highlight</code></p>
-         <p class="quote">This is a block quote style using <code>.quote</code></p>
-         <p>This is <span class="code-text">inline code</span> using <code>.code-text</code></p>
-
-      </div>
-   </section>
+      <!-- COLORS -->
+      <section class="demo">
+         <h2>Color Utilities</h2>
+         <div class="demo-block">
+   
+            <p class="bg-light">This is a light background using <code>.bg-light</code></p>
+            <p class="bg-dark">This is a dark background using <code>.bg-dark</code></p>
+            <p class="bg-primary">This is a primary color background using <code>.bg-primary</code></p>
+   
+         </div>
+      </section>
 
    <!-- IMAGE STYLES -->
    <section class="demo">
       <h2>Image Styles</h2>
       <div class="demo-block">
+
          <img src="https://picsum.photos/100" class="img-circle" alt="Circle image">
          <img src="https://picsum.photos/100" class="img-thumbnail" alt="Thumbnail">
          <img src="https://picsum.photos/100" class="img-left" alt="Left float">
@@ -252,6 +301,7 @@
    <section class="demo">
       <h2>Width Utilities</h2>
       <div class="demo-block">
+
          <div class="w-full bg-light">This takes up 100% width using <code>.w-full</code></div>
          <div class="max-w-screen-sm bg-light">This is limited to 600px wide using <code>.max-w-screen-sm</code></div>
          <div class="max-w-screen-md bg-light">This is limited to 800px wide using <code>.max-w-screen-md</code></div>
@@ -291,16 +341,7 @@
       </div>
    </section>
 
-   <section class="demo">
-      <h2>Headings</h2>
-      <div class="demo-block">
 
-         <h1>I'm an h1</h1>
-         <h2>I'm an h2</h2>
-         <h3>I'm an h3</h3>
-
-      </div>
-   </section>
 
    <section class="demo">
       <h2>Container</h2>
@@ -391,26 +432,6 @@
    </section>
 
 
-   <section class="demo">
-      <h2>Text Alignment (Left / Right)</h2>
-      <div class="demo-block">
-
-         <p class="text-left">This paragraph is <strong>left-aligned</strong> using <code>.text-left</code>.</p>
-         <p class="text-right">This paragraph is <strong>right-aligned</strong> using <code>.text-right</code>.</p>
-
-      </div>
-   </section>
-
-
-   <section class="demo">
-      <h2>Font Families</h2>
-      <div class="demo-block">
-
-         <p class="text-serif">This is serif text (e.g., Georgia) using <code>.text-serif</code>.</p>
-         <p class="text-mono">This is monospace text (e.g., Courier) using <code>.text-mono</code>.</p>
-
-      </div>
-   </section>
 
 
 </body>

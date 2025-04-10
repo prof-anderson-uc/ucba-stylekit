@@ -16,31 +16,32 @@
   --font-h4: 1.25rem;        /* 20px */
 }
 
+
 /* Heading Defaults */
 h1 {
   font-size: var(--font-h1);
   font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 0.5rem;
+  /* line-height: 1.2; */
+  /* margin-bottom: 0.5rem; */
 }
 
 h2 {
   font-size: var(--font-h2);
   font-weight: bold;
-  line-height: 1.3;
-  margin-bottom: 0.5rem;
+  /* line-height: 1.3; */
+  /* margin-bottom: 0.5rem; */
 }
 
 h3 {
   font-size: var(--font-h3);
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 h4 {
   font-size: var(--font-h4);
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 
@@ -49,36 +50,24 @@ h4 {
    Created by: Professor Eric Anderson
    Title: Professor at the University of Cincinnati
    GitHub: https://github.com/prof-anderson-uc
-   Last Updated: April 9, 2025
-   Note: Designed to be used AFTER a reset.css
+   Note: Designed to be used AFTER reset.css
    =================================== */
 
 /* === Base Reset Overrides === */
 
 /* Restore useful body defaults removed by reset.css */
 body {
-   line-height: 1.4;  
+   /* line-height: 1.4;   */
    /* background-color: #fff; */
    /* color: #000; */
  }
  
  /* Restore list style for normal lists (not list-groups) */
- ul:not(.list-group), ol:not(.list-group) {
+ ul:not(.list-group), 
+ ol:not(.list-group) {
    list-style: disc;
    margin-left: 1.5rem;
  }
- 
- /* Restore heading spacing if reset removed it */
- /* h1, h2, h3, h4, h5, h6 {
-   margin-bottom: 0.5rem;
-   font-weight: bold;
-   line-height: 1.2;
- } */
- 
- /* Restore default spacing for paragraphs */
- /* p {
-   margin-bottom: 1rem;
- } */
  
  /* Reintroduce quotes for blockquotes if reset removed them */
  blockquote:before, blockquote:after,
@@ -134,6 +123,7 @@ body {
    display: inline-block; /* keep inline but allow width/height */
  }
  
+ 
  /* === Typography === */
  
  /* Smaller font size */
@@ -166,17 +156,7 @@ body {
    text-transform: uppercase;
  }
  
- /* Large bold heading */
- .heading {
-   font-size: 2rem;       /* ~32px */
-   font-weight: bold;
- }
  
- /* Subheading with lighter color */
- .subheading {
-   font-size: 1.5rem;     /* ~24px */
-   color: #555;           /* dark gray */
- }
  
  /* Larger paragraph text */
  .lead {
@@ -188,20 +168,20 @@ body {
  
  /* Subtle text shadow */
  .shadow-text {
-   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
  }
  
  /* Yellow highlight */
  .highlight {
-   background-color: yellow;
+   background-color: rgba(255, 255, 0, 0.6);
  }
  
  /* Blockquote-style callout */
  .quote {
-   font-style: italic;
+   /* font-style: italic; */
    border-left: 4px solid #ccc;
-   padding-left: 1rem;
-   color: #555;
+   padding: 0.25rem 1rem;
+   /* color: #555; */
    margin: 1rem 0;
  }
  
@@ -213,15 +193,27 @@ body {
    border-radius: 0.25rem;
  }
  
+
  /* === Spacing === */
  
  /* Margin utilities */
- .m-1 { margin: 0.5rem; }
- .mt-1 { margin-top: 0.5rem; }
- .mb-1 { margin-bottom: 0.5rem; }
+.m-1 { 
+   margin: 0.5rem; 
+}
+
+.mt-1 { 
+   margin-top: 0.5rem;
+}
+
+.mb-1 {
+   margin-bottom: 0.5rem;
+}
  
  /* Padding utilities */
- .p-1 { padding: 0.5rem; }
+ .p-1 {
+   padding: 0.5rem;
+}
+
  .px-1 {
    padding-left: 0.5rem;
    padding-right: 0.5rem;
@@ -230,7 +222,9 @@ body {
  /* === Colors === */
  
  /* Light background */
- .bg-light { background-color: #f9f9f9; }
+ .bg-light {
+   background-color: #f9f9f9;
+}
  
  /* Dark background with white text */
  .bg-dark {
@@ -238,7 +232,7 @@ body {
    color: white;
  }
  
- /* Blue background and white text */
+ /* Primary color background and white text */
  
 .bg-primary {
   background-color: var(--color-primary);
@@ -247,7 +241,9 @@ body {
 
  
  /* Muted gray text */
- .text-muted { color: #888; }
+ .text-muted {
+   color: #888;
+}
  
  /* Primary brand color text */
  
@@ -268,7 +264,7 @@ body {
    border-radius: 0.25rem; /* rounded corners */
  }
  
- /* Solid blue button */
+ /* Primary color button */
  
 .btn-primary {
   background-color: var(--color-primary);
@@ -276,7 +272,7 @@ body {
 }
 
  
- /* Gray button */
+ /* Secondary color button */
  
 .btn-secondary {
   background-color: var(--color-secondary);
@@ -291,6 +287,7 @@ body {
    color: #0066cc;
  }
  
+
  /* === Cards === */
  
  /* Box with border, padding, and shadow */
@@ -330,7 +327,7 @@ body {
  /* Hover effect */
  .list-group-item:hover {
    background-color: #e6f0ff;
-   cursor: pointer;
+   /* cursor: pointer; */
  }
  
  /* === Images === */
@@ -412,9 +409,9 @@ body {
  
  /* Narrow content block */
  .content {
-   max-width: 65ch;       /* ~65 characters line length */
+   max-width: 65ch;   /* ~65 characters line length */
    margin: 0 auto;
-   line-height: 1.6;      /* readable spacing */
+   line-height: 1.6;  /* readable spacing */
  }
  
  /* Horizontal divider */
@@ -533,8 +530,8 @@ body {
 .italic { font-style: italic; }
 
 /* Font size helpers */
-.text-sm { font-size: 0.875rem; }     /* Slightly smaller text */
-.text-lg { font-size: 1.25rem; }      /* Slightly larger text */
+.text-sm { font-size: 0.875rem; }  /* Slightly smaller text */
+.text-lg { font-size: 1.25rem; }   /* Slightly larger text */
 .lead { font-size: 1.5rem; line-height: 1.6; } /* Great for intro paragraphs */
 
 /* Font family options */
@@ -556,28 +553,30 @@ body {
 /* Underline-style heading */
 .heading-underline {
   /* display: inline-block; */
-  border-bottom: 1px solid #0055aa;
+  border-bottom: 1px solid black;
   padding-bottom: 0.25rem;
   margin-bottom: 0.5rem;
 }
 
 
 
+ /* === Hero Banner === */
+ /* Normally you'd add the image with background-image: in the CSS. 
+    For this example we're adding the image with the style= attribute in the HTML. It's done this way so you can have more than one hero banner on a page that have different images. */
+
 .hero-banner {
+   height: 300px; /* Sets the height of the hero banner */
    position: relative;
-   height: 50vh;
    display: flex;
    align-items: center;
    justify-content: center;
    text-align: center;
-   color: white;
- 
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
  }
  
- /* Add a dark gradient overlay */
+ /* Adds a dark gradient to darken the image */
  .hero-banner::before {
    content: "";
    position: absolute;
@@ -593,14 +592,17 @@ body {
    max-width: 90%;
    padding: 1rem;
    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+   color: white; /* Color of text inside hero banner */
  }
  
+  /* Hero banner <h2> text */
  .hero-text h2 {
-   font-size: 2.5rem;
-   margin-bottom: 0.5rem;
+   font-size: 2.5rem; /* Size of the <h2> text */
+   margin-bottom: 0.5rem; /* Space below the <h2> */
  }
  
+ /* Hero banner paragraph text */
  .hero-text p {
-   font-size: 1.25rem;
+   font-size: 1.25rem; /* Size of <p> text */
  }
  
