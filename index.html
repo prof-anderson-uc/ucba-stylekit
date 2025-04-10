@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>UCBA Stylekit Demos</title>
+   <link rel="stylesheet" href="reset.css">
+   <link rel="stylesheet" href="ucba-stylekit-v5.css">
+   <!-- ⬇︎ Ignore these styles. They're the framework for the demo page only -->
+   <style>
+      body {
+         font-family: sans-serif;
+         padding: 2rem;
+         background: #fafafa;
+      }
+
+      section.demo {
+         margin-bottom: 3rem;
+      }
+
+      h2 {
+         margin-top: 2rem;
+         border-bottom: 2px solid #ddd;
+         padding-bottom: 0.5rem;
+      }
+
+      .demo-block {
+         background: white;
+         padding: 1rem;
+         border: 1px dashed #ccc;
+         margin-top: 0.5rem;
+      }
+   </style>
+</head>
+
+<body>
+   <h1 class="heading text-center">UCBA Stylekit Demo</h1>
+
+   <!-- CARD EXAMPLE -->
+   <section class="demo">
+      <h2>Card</h2>
+      <div class="demo-block">
+
+         <div class="card">
+            <h3>Card Title</h3>
+            <p>This is a card. Cards are content boxes with padding, border, and slight shadow.</p>
+         </div>
+
+      </div>
+   </section>
+
+   <!-- CARD WITH IMAGE -->
+   <section class="demo">
+      <h2>Card with Image</h2>
+      <div class="demo-block">
+
+         <div class="card">
+            <img src="https://picsum.photos/400/200" alt="Example image" class="img-responsive mb-1">
+            <h3>Card with Image</h3>
+            <p>Cards can contain images too. The image scales to fit the container and looks nice with rounded corners and shadow.</p>
+         </div>
+
+      </div>
+   </section>
+
+   <section class="demo">
+      <h2>Hero Banners</h2>
+      <div class="demo-block">
+
+   <section class="hero-banner" style="background-image: url('https://picsum.photos/id/1005/1600/900');">
+      <div class="hero-text">
+         <h2>A "Hero Banner" is a large image with text overtop</h2>
+         <p>often placed near the top of a webpage</p>
+      </div>
+   </section>
+
+   <br><!--  ⬅︎ Ignore this, it isn't part of the hero banners -->
+
+   <section class="hero-banner" style="background-image: url('https://picsum.photos/id/1018/1600/900');">
+      <div class="hero-text">
+         <h2>Another Section with a Unique Image</h2>
+         <p>Same layout, different photo — no new CSS needed</p>
+      </div>
+   </section>
+
+      </div>
+   </section>
+
+
+
+
+
+   <!-- LIST GROUP -->
+   <section class="demo">
+      <h2>List Group</h2>
+      <div class="demo-block">
+
+         <ul class="list-group">
+            <li class="list-group-item">List Item 1</li>
+            <li class="list-group-item">List Item 2</li>
+            <li class="list-group-item">List Item 3</li>
+         </ul>
+
+      </div>
+   </section>
+
+   <!-- TOGGLE-BOX(CSS only) -->
+   <section class="demo">
+      <h2>TOGGLE-BOX</h2>
+      <div class="demo-block">
+
+         <details class="toggle-box">
+            <summary class="toggle-box-title">Click to expand</summary>
+            <div class="toggle-box-content">
+               <p>This is a simple accordion. It's a collapsible content area with no JavaScript needed.</p>
+            </div>
+         </details>
+
+      </div>
+   </section>
+
+   <!-- RESPONSIVE GRID -->
+   <section class="demo">
+      <h2>Responsive Grid</h2>
+      <div class="demo-block">
+
+         <div class="responsive-grid responsive-grid-2">
+            <div class="card">Grid Item 1</div>
+            <div class="card">Grid Item 2</div>
+         </div>
+
+      </div>
+   </section>
+
+   <!-- FLEX WRAP -->
+   <section class="demo">
+      <h2>Flex Wrap Row</h2>
+      <div class="demo-block">
+
+         <div class="flex-wrap">
+            <div class="card" style="flex: 1 1 200px;">Item A</div>
+            <div class="card" style="flex: 1 1 200px;">Item B</div>
+            <div class="card" style="flex: 1 1 200px;">Item C</div>
+         </div>
+
+      </div>
+   </section>
+
+   <!-- RESPONSIVE VISIBILITY -->
+   <section class="demo">
+      <h2>Responsive Visibility</h2>
+      <div class="demo-block">
+
+         <p class="show-mobile">👋 This only SHOWS on screens smaller than 600px.</p>
+         <p class="hide-mobile">🙈 This HIDES on small screens (less than 600px).</p>
+
+      </div>
+   </section>
+
+   <!-- TYPOGRAPHY -->
+   <section class="demo">
+      <h2>Typography</h2>
+      <div class="demo-block">
+
+         <p class="text-sm">This is small text using <code>.text-sm</code></p>
+         <p class="text-lg">This is large text using <code>.text-lg</code></p>
+         <p class="bold">This text is bold with <code>.bold</code></p>
+         <p class="italic">This text is italic with <code>.italic</code></p>
+         <p class="uppercase">This is uppercase using <code>.uppercase</code></p>
+         <h3>This is a heading with <code>.heading</code></h3>
+         <p class="subheading">This is a subheading using <code>.subheading</code></p>
+         <p class="lead">This is a lead paragraph with <code>.lead</code></p>
+         <p class="text-muted">This is muted text using <code>.text-muted</code></p>
+         <p class="text-primary">This is primary-colored text using <code>.text-primary</code></p>
+
+      </div>
+   </section>
+
+   <!-- Heading Underline Example -->
+   <div class="demo-block">
+      <h3>Heading Underline Example</h3>
+      <h2 class="heading-underline">This is an Underlined Heading</h2>
+      <p>This heading uses the <code>.heading-underline</code> class to create a bold underline using <code>border-bottom</code>.</p>
+   </div>
+
+
+   <!-- BUTTONS -->
+   <section class="demo">
+      <h2>Buttons</h2>
+      <div class="demo-block">
+
+         <button class="btn">Default Button</button>
+         <button class="btn btn-primary">Primary Button</button>
+         <button class="btn btn-secondary">Secondary Button</button>
+         <button class="btn btn-outline">Outline Button</button>
+
+      </div>
+   </section>
+
+   <!-- SPACING -->
+   <section class="demo">
+      <h2>Spacing</h2>
+      <div class="demo-block">
+
+         <p class="m-1 bg-light">This has margin <code>.m-1</code></p>
+         <p class="p-1 bg-light">This has padding <code>.p-1</code></p>
+         <p class="mt-1 mb-1 px-1 bg-light">Top/bottom margins and horizontal padding using <code>.mt-1</code>, <code>.mb-1</code>, <code>.px-1</code></p>
+
+      </div>
+   </section>
+
+   <!-- COLORS -->
+   <section class="demo">
+      <h2>Color Utilities</h2>
+      <div class="demo-block">
+
+         <p class="bg-light">This is a light background using <code>.bg-light</code></p>
+         <p class="bg-dark">This is a dark background using <code>.bg-dark</code></p>
+         <p class="bg-primary">This is a primary color background using <code>.bg-primary</code></p>
+
+      </div>
+   </section>
+
+   <!-- TEXT EFFECTS -->
+   <section class="demo">
+      <h2>Text Effects</h2>
+      <div class="demo-block">
+
+         <p class="shadow-text">This text has a shadow using <code>.shadow-text</code></p>
+         <p class="highlight">This text is highlighted with <code>.highlight</code></p>
+         <p class="quote">This is a block quote style using <code>.quote</code></p>
+         <p>This is <span class="code-text">inline code</span> using <code>.code-text</code></p>
+
+      </div>
+   </section>
+
+   <!-- IMAGE STYLES -->
+   <section class="demo">
+      <h2>Image Styles</h2>
+      <div class="demo-block">
+         <img src="https://picsum.photos/100" class="img-circle" alt="Circle image">
+         <img src="https://picsum.photos/100" class="img-thumbnail" alt="Thumbnail">
+         <img src="https://picsum.photos/100" class="img-left" alt="Left float">
+         <img src="https://picsum.photos/100" class="img-right" alt="Right float">
+         <img src="https://picsum.photos/100" class="img-center" alt="Centered">
+         <img src="https://picsum.photos/150" class="img-photo" alt="Photo style">
+
+      </div>
+   </section>
+
+   <!-- WIDTH UTILITIES -->
+   <section class="demo">
+      <h2>Width Utilities</h2>
+      <div class="demo-block">
+         <div class="w-full bg-light">This takes up 100% width using <code>.w-full</code></div>
+         <div class="max-w-screen-sm bg-light">This is limited to 600px wide using <code>.max-w-screen-sm</code></div>
+         <div class="max-w-screen-md bg-light">This is limited to 800px wide using <code>.max-w-screen-md</code></div>
+
+      </div>
+   </section>
+
+   <!-- UTILITY -->
+   <section class="demo">
+      <h2>Utility</h2>
+
+      <div class="demo-block content">
+         <p>This is wrapped in a <code>.content</code> class which keeps line length readable.</p>
+      </div>
+
+      <div class="divider"></div>
+
+
+   </section>
+
+   <!-- EFFECTS -->
+   <section class="demo">
+      <h2>Effects</h2>
+      <div class="demo-block">
+         <p><strong>Refresh your browser to see them load again.</strong></p>
+
+         <p class="fade-in">This fades in immediately by using the class<br> <code>.fade-in</code></p>
+
+         <p class="fade-in delay-1s">This fades in after a one second delay by using these <strong>two</strong> classes<br> <code>.fade-in</code>&nbsp;&nbsp;&nbsp;<code>.delay-1s</code></p>
+
+         <p class="fade-in delay-2s">This fades in after a two second delay by using these <strong>two</strong> classes<br> <code>.fade-in</code>&nbsp;&nbsp;&nbsp;<code>.delay-2s</code></p>
+
+         <p class="fade-in delay-3s">This fades in after a three second delay by using these <strong>two</strong> classes<br> <code>.fade-in</code>&nbsp;&nbsp;&nbsp;<code>.delay-3s</code></p>
+
+         <p class="hover-zoom">Hover over this text to see the zoom effect using<br> <code>.hover-zoom</code></p>
+
+      </div>
+   </section>
+
+   <section class="demo">
+      <h2>Headings</h2>
+      <div class="demo-block">
+
+         <h1>I'm an h1</h1>
+         <h2>I'm an h2</h2>
+         <h3>I'm an h3</h3>
+
+      </div>
+   </section>
+
+   <section class="demo">
+      <h2>Container</h2>
+      <div class="demo-block">
+
+         <div class="container" style="background-color: #f0f0f0; padding: 1rem;">
+            This content is centered and constrained to a max width using <code>.container</code>.
+         </div>
+
+      </div>
+   </section>
+
+   <section class="demo">
+      <h2>Flex Layout</h2>
+      <div class="demo-block">
+
+         <div class="flex" style="gap: 1rem;">
+            <div class="card" style="flex: 1;">Flex Item 1</div>
+            <div class="card" style="flex: 1;">Flex Item 2</div>
+         </div>
+
+      </div>
+   </section>
+
+   <section class="demo">
+      <h2>Flex Center</h2>
+      <div class="demo-block">
+
+         <div class="flex-center" style="height: 150px; background: #eee;">
+            <p>This text is vertically and horizontally centered using <code>.flex-center</code>.</p>
+         </div>
+
+      </div>
+   </section>
+
+
+   <section class="demo">
+      <h2>Grid Layout</h2>
+      <div class="demo-block">
+
+         <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="card">Grid Item 1</div>
+            <div class="card">Grid Item 2</div>
+            <div class="card">Grid Item 3</div>
+         </div>
+
+      </div>
+   </section>
+
+
+   <section class="demo">
+      <h2>Responsive Grid (3 Columns)</h2>
+      <div class="demo-block">
+
+         <div class="responsive-grid responsive-grid-3">
+            <div class="card">Item 1</div>
+            <div class="card">Item 2</div>
+            <div class="card">Item 3</div>
+         </div>
+
+      </div>
+   </section>
+
+
+   <section class="demo">
+      <h2>Inline Block</h2>
+      <div class="demo-block">
+
+         <span class="inline-block" style="background: #ddd; padding: 1rem;">Box 1</span>
+         <span class="inline-block" style="background: #ccc; padding: 1rem;">Box 2</span>
+         <p>These boxes sit next to each other but respect width/height due to <code>.inline-block</code>.</p>
+
+      </div>
+   </section>
+
+
+   <section class="demo">
+      <h2>Space Between</h2>
+      <div class="demo-block">
+
+         <div class="flex space-between" style="background: #f0f0f0; padding: 1rem;">
+            <span>Left</span>
+            <span>Right</span>
+         </div>
+         <p>Items are pushed to the ends using <code>.space-between</code>.</p>
+
+      </div>
+   </section>
+
+
+   <section class="demo">
+      <h2>Text Alignment (Left / Right)</h2>
+      <div class="demo-block">
+
+         <p class="text-left">This paragraph is <strong>left-aligned</strong> using <code>.text-left</code>.</p>
+         <p class="text-right">This paragraph is <strong>right-aligned</strong> using <code>.text-right</code>.</p>
+
+      </div>
+   </section>
+
+
+   <section class="demo">
+      <h2>Font Families</h2>
+      <div class="demo-block">
+
+         <p class="text-serif">This is serif text (e.g., Georgia) using <code>.text-serif</code>.</p>
+         <p class="text-mono">This is monospace text (e.g., Courier) using <code>.text-mono</code>.</p>
+
+      </div>
+   </section>
+
+
+</body>
+</html>

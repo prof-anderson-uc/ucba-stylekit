@@ -1,0 +1,606 @@
+
+:root {
+  /* Brand Colors */
+  --color-primary: #e00122;
+  --color-secondary: thistle;
+  --color-primary-text: white;
+  --color-secondary-text: #333;
+
+  /* Font Sizes */
+  --font-base: 1rem;         /* 16px */
+  --font-sm: 0.875rem;       /* ~14px */
+  --font-lg: 1.25rem;        /* ~20px */
+  --font-h1: 2.5rem;         /* 40px */
+  --font-h2: 2rem;           /* 32px */
+  --font-h3: 1.5rem;         /* 24px */
+  --font-h4: 1.25rem;        /* 20px */
+}
+
+/* Heading Defaults */
+h1 {
+  font-size: var(--font-h1);
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: var(--font-h2);
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: var(--font-h3);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: var(--font-h4);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+
+/* ===================================
+   UCBA Stylekit CSS
+   Created by: Eric Anderson
+   Title: Professor at the University of Cincinnati
+   GitHub: https://github.com/prof-anderson-uc
+   Last Updated: April 9, 2025
+   Note: Designed to be used AFTER a reset.css
+   =================================== */
+
+/* === Base Reset Overrides === */
+
+/* Restore useful body defaults removed by reset.css */
+body {
+   line-height: 1.4;  
+   /* background-color: #fff; */
+   /* color: #000; */
+ }
+ 
+ /* Restore list style for normal lists (not list-groups) */
+ ul:not(.list-group), ol:not(.list-group) {
+   list-style: disc;
+   margin-left: 1.5rem;
+ }
+ 
+ /* Restore heading spacing if reset removed it */
+ /* h1, h2, h3, h4, h5, h6 {
+   margin-bottom: 0.5rem;
+   font-weight: bold;
+   line-height: 1.2;
+ } */
+ 
+ /* Restore default spacing for paragraphs */
+ /* p {
+   margin-bottom: 1rem;
+ } */
+ 
+ /* Reintroduce quotes for blockquotes if reset removed them */
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+   content: '';
+ }
+ 
+ /* === Stylekit starts here (already organized) === */
+ 
+
+/* ===================================
+   UCBA Stylekit CSS
+   Created by: Eric Anderson
+   Title: Professor at the University of Cincinnati
+   GitHub: https://github.com/prof-anderson-uc
+   Last Updated: April 9, 2025
+   =================================== */
+
+/* === Layout === */
+
+/* A centered container with padding and max width */
+.container {
+   max-width: 1200px;     /* limit content width */
+   margin: 0 auto;        /* center the container */
+   padding: 1rem;         /* inner spacing */
+ }
+ 
+ /* Flexbox container */
+ .flex {
+   display: flex;         /* enable flex layout */
+ }
+ 
+ /* Flexbox that centers items */
+ .flex-center {
+   display: flex;         /* flex container */
+   justify-content: center; /* center horizontally */
+   align-items: center;   /* center vertically */
+ }
+ 
+ /* Grid layout with gaps */
+ .grid {
+   display: grid;         /* enable grid layout */
+   gap: 1rem;             /* space between grid items */
+ }
+ 
+ /* Even spacing between flex children */
+ .space-between {
+   justify-content: space-between; /* push children to far ends */
+ }
+ 
+ /* Inline-block layout */
+ .inline-block {
+   display: inline-block; /* keep inline but allow width/height */
+ }
+ 
+ /* === Typography === */
+ 
+ /* Smaller font size */
+ .text-sm {
+   font-size: 0.875rem;   /* ~14px */
+ }
+ 
+ /* Larger font size */
+ .text-lg {
+   font-size: 1.25rem;    /* ~20px */
+ }
+ 
+ /* Center text */
+ .text-center {
+   text-align: center;
+ }
+ 
+ /* Bold text */
+ .bold {
+   font-weight: bold;
+ }
+ 
+ /* Italic text */
+ .italic {
+   font-style: italic;
+ }
+ 
+ /* Uppercase letters */
+ .uppercase {
+   text-transform: uppercase;
+ }
+ 
+ /* Large bold heading */
+ .heading {
+   font-size: 2rem;       /* ~32px */
+   font-weight: bold;
+ }
+ 
+ /* Subheading with lighter color */
+ .subheading {
+   font-size: 1.5rem;     /* ~24px */
+   color: #555;           /* dark gray */
+ }
+ 
+ /* Larger paragraph text */
+ .lead {
+   font-size: 1.25rem;
+   color: #333;
+ }
+ 
+ /* === Text Effects === */
+ 
+ /* Subtle text shadow */
+ .shadow-text {
+   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+ }
+ 
+ /* Yellow highlight */
+ .highlight {
+   background-color: yellow;
+ }
+ 
+ /* Blockquote-style callout */
+ .quote {
+   font-style: italic;
+   border-left: 4px solid #ccc;
+   padding-left: 1rem;
+   color: #555;
+   margin: 1rem 0;
+ }
+ 
+ /* Code or terminal-style text */
+ .code-text {
+   font-family: monospace;
+   background-color: #f4f4f4;
+   padding: 0.25rem 0.5rem;
+   border-radius: 0.25rem;
+ }
+ 
+ /* === Spacing === */
+ 
+ /* Margin utilities */
+ .m-1 { margin: 0.5rem; }
+ .mt-1 { margin-top: 0.5rem; }
+ .mb-1 { margin-bottom: 0.5rem; }
+ 
+ /* Padding utilities */
+ .p-1 { padding: 0.5rem; }
+ .px-1 {
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+ }
+ 
+ /* === Colors === */
+ 
+ /* Light background */
+ .bg-light { background-color: #f9f9f9; }
+ 
+ /* Dark background with white text */
+ .bg-dark {
+   background-color: #333;
+   color: white;
+ }
+ 
+ /* Blue background and white text */
+ 
+.bg-primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-text);
+}
+
+ 
+ /* Muted gray text */
+ .text-muted { color: #888; }
+ 
+ /* Primary brand color text */
+ 
+.text-primary {
+  color: var(--color-primary);
+}
+
+ 
+ /* === Buttons === */
+ 
+ /* Base button style */
+ .btn {
+   display: inline-block;
+   padding: 0.5rem 1rem;   /* vertical + horizontal padding */
+   border: none;
+   cursor: pointer;
+   font-size: 1rem;
+   border-radius: 0.25rem; /* rounded corners */
+ }
+ 
+ /* Solid blue button */
+ 
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-text);
+}
+
+ 
+ /* Gray button */
+ 
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-text);
+}
+
+ 
+ /* Outlined blue button */
+ .btn-outline {
+   background: none;
+   border: 1px solid #0066cc;
+   color: #0066cc;
+ }
+ 
+ /* === Cards === */
+ 
+ /* Box with border, padding, and shadow */
+ .card {
+   border: 1px solid #ddd;
+   border-radius: 0.5rem;
+   padding: 1rem;
+   background-color: #fff;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+   margin-bottom: 1rem;
+ }
+ 
+ /* === List Groups === */
+ 
+ /* Group container */
+ .list-group {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   border: 1px solid #ccc;
+   border-radius: 0.5rem;
+   overflow: hidden;
+ }
+ 
+ /* Individual item */
+ .list-group-item {
+   padding: 0.75rem 1rem;
+   border-bottom: 1px solid #ccc;
+   background-color: #f9f9f9;
+ }
+ 
+ /* Remove border from last item */
+ .list-group-item:last-child {
+   border-bottom: none;
+ }
+ 
+ /* Hover effect */
+ .list-group-item:hover {
+   background-color: #e6f0ff;
+   cursor: pointer;
+ }
+ 
+ /* === Images === */
+ 
+ /* Responsive image with border and shadow */
+ .img-responsive {
+   max-width: 100%;       /* scale to parent width */
+   height: auto;          /* maintain aspect ratio */
+   border-radius: 0.5rem; /* rounded corners */
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+   display: block;
+   margin: 0 auto;        /* center image */
+ }
+ 
+ /* Circle image */
+ .img-circle { border-radius: 50%; }
+ 
+ /* Framed thumbnail */
+ .img-thumbnail {
+   border: 1px solid #ddd;
+   padding: 0.25rem;
+   border-radius: 0.25rem;
+ }
+ 
+ /* Float right */
+ .img-right {
+   float: right;
+   margin-left: 2rem;
+   margin-bottom: 1rem;
+ }
+ 
+ /* Float left */
+ .img-left {
+   float: left;
+   margin-right: 2rem;
+   margin-bottom: 1rem;
+ }
+ 
+ /* Centered block */
+ .img-center {
+   display: block;
+   margin: 1rem auto;
+ }
+ 
+ /* Photo style image */
+ .img-photo {
+   border: 4px solid white;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+   background-color: white;
+   padding: 0.5rem;
+ }
+ 
+ /* === Toggle Boxes === */
+ 
+ /* Expandable section */
+ details.toggle-box {
+   margin-bottom: 1rem;
+   border: 1px solid #ccc;
+   border-radius: 0.5rem;
+   background: #fdfdfd;
+ }
+ 
+ /* Toggle Box Header */
+ summary.toggle-box-title {
+   font-weight: bold;
+   padding: 0.75rem 1rem;
+   cursor: pointer;
+   background-color: #eee;
+   border-bottom: 1px solid #ccc;
+ }
+ 
+ /* Toggle Box Body */
+ .toggle-box-content {
+   padding: 1rem;
+   background: white;
+ }
+ 
+ /* === Utility === */
+ 
+ /* Narrow content block */
+ .content {
+   max-width: 65ch;       /* ~65 characters line length */
+   margin: 0 auto;
+   line-height: 1.6;      /* readable spacing */
+ }
+ 
+ /* Horizontal divider */
+ .divider {
+   border-top: 1px solid #ccc;
+   margin: 2rem 0;
+ }
+ 
+ 
+ /* === Responsive Helpers === */
+ 
+ /* Simple grid that becomes 2 or 3 columns on wider screens */
+ .responsive-grid {
+   display: grid;
+   gap: 1rem;
+   grid-template-columns: 1fr;
+ }
+ 
+ @media (min-width: 600px) {
+   .responsive-grid-2 {
+     grid-template-columns: repeat(2, 1fr);
+   }
+   .responsive-grid-3 {
+     grid-template-columns: repeat(3, 1fr);
+   }
+ }
+ 
+ /* Width utility classes */
+ .w-full {
+   width: 100%;
+ }
+ 
+ .max-w-screen-sm {
+   max-width: 600px;
+   margin: 0 auto;
+ }
+ 
+ .max-w-screen-md {
+   max-width: 800px;
+   margin: 0 auto;
+ }
+ 
+ /* Responsive visibility helpers */
+ .hide-mobile {
+   display: none;
+ }
+ 
+ @media (min-width: 600px) {
+   .hide-mobile {
+     display: block;
+   }
+   .show-mobile {
+     display: none;
+   }
+ }
+ 
+ /* Flex wrap row layout */
+ .flex-wrap {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+ }
+ 
+ /* === Effects === */
+ 
+/* Fade-in animation keyframes */
+@keyframes fadeIn {
+   to { opacity: 1; }
+ }
+ 
+ /* Base fade-in effect */
+ .fade-in {
+   animation: fadeIn 2s ease-in forwards;
+   opacity: 0;
+ }
+ 
+ /* Variations with delay */
+ .delay-1s {
+   animation-delay: 1s;
+ }
+ 
+ .delay-2s {
+   animation-delay: 2s;
+ }
+ 
+ .delay-3s {
+   animation-delay: 3s;
+ }
+ 
+ 
+ /* Hover zoom effect */
+ .hover-zoom {
+   display: inline-block; /* Optional but helps prevent layout shift */
+   transition: transform 0.5s ease;
+   transform-origin: center; /* Ensures scaling happens from the center */
+ }
+ 
+ .hover-zoom:hover {
+   transform: scale(1.05);
+ }
+ 
+
+
+/* ========================================
+   ✍️ Typography Utilities
+   Classes for font size, weight, alignment, style, and visual emphasis
+=========================================== */
+
+/* Alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* Font weight & style */
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+
+/* Font size helpers */
+.text-sm { font-size: 0.875rem; }     /* Slightly smaller text */
+.text-lg { font-size: 1.25rem; }      /* Slightly larger text */
+.lead { font-size: 1.5rem; line-height: 1.6; } /* Great for intro paragraphs */
+
+/* Font family options */
+.text-serif { font-family: Georgia, serif; }
+.text-mono { font-family: monospace; }
+
+/* Muted / de-emphasized */
+.text-muted { color: #777; }
+
+/* Styled blockquote */
+.quote {
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  margin-left: 0;
+  color: #555;
+  font-style: italic;
+}
+
+/* Underline-style heading */
+.heading-underline {
+  /* display: inline-block; */
+  border-bottom: 1px solid #0055aa;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+.hero-banner {
+   position: relative;
+   height: 50vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: white;
+ 
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
+ 
+ /* Add a dark gradient overlay */
+ .hero-banner::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+   z-index: 1;
+ }
+ 
+ /* Text inside the hero banner */
+ .hero-text {
+   position: relative;
+   z-index: 2;
+   max-width: 90%;
+   padding: 1rem;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+ }
+ 
+ .hero-text h2 {
+   font-size: 2.5rem;
+   margin-bottom: 0.5rem;
+ }
+ 
+ .hero-text p {
+   font-size: 1.25rem;
+ }
+ 
