@@ -8,6 +8,7 @@ It provides ready-to-use class-based styles that help you create visually appeal
 
 ## ✨ What It Can Do
 Use UCBA Stylekit to quickly add:
+
 - Layout helpers (flexbox, grid, centered content)
 - Typography styles (headings, subheadings, muted/primary text)
 - Spacing utilities (margin/padding)
@@ -22,7 +23,9 @@ Use UCBA Stylekit to quickly add:
 ---
 
 ## 🧠 Why Use This Toolkit?
+
 Students often struggle with naming, layout, and responsive behavior. This toolkit helps:
+
 - Get consistent results across assignments
 - Learn reusable naming patterns
 - Build pages faster
@@ -32,11 +35,13 @@ Students often struggle with naming, layout, and responsive behavior. This toolk
 
 ## 🧱 How It’s Like a Framework (But Smaller)
 This works like a **lightweight framework**:
+
 - Uses class names to apply styles
 - Encourages consistent, reusable design
 - Has documentation and examples
 
 But it’s much **simpler**:
+
 - All styles are visible in one file
 - You can read and modify the CSS
 - Designed for **learning**, not production
@@ -44,9 +49,11 @@ But it’s much **simpler**:
 ---
 
 ## 🧩 New Responsive Features (2025 Update!)
+
 These new classes help you design for mobile screens:
 
 ### Responsive Grid
+
 ```html
 <div class="responsive-grid responsive-grid-2">
   <div class="card">Item A</div>
@@ -55,12 +62,14 @@ These new classes help you design for mobile screens:
 ```
 
 ### Responsive Visibility
+
 ```html
 <p class="show-mobile">Only shows on small screens</p>
 <p class="hide-mobile">Hidden on small screens</p>
 ```
 
 ### Width Controls
+
 ```html
 <div class="w-full">Full width</div>
 <div class="max-w-screen-sm">600px max width</div>
@@ -70,7 +79,9 @@ These new classes help you design for mobile screens:
 ---
 
 ## 📐 Naming Conventions
+
 Most class names follow this pattern:
+
 - `.text-*` for text style (size, weight, alignment)
 - `.bg-*` and `.text-*` for color
 - `.m-*`, `.p-*`, `.mt-1`, `.mb-1`, `.px-1` for spacing
@@ -80,6 +91,7 @@ Most class names follow this pattern:
 ---
 
 ## 🧪 How to Use It
+
 1. Link to `ucba-stylekit.css` in your HTML `<head>`
 2. Copy examples from `ucba-stylekit-demo.html`
 3. Add classes to your HTML elements as needed
@@ -88,8 +100,9 @@ Most class names follow this pattern:
 ---
 
 ## 🔗 Author Info
-Created by **Eric Anderson**  
-Professor, University of Cincinnati Blue Ash College  
+
+Created by **Professor Eric Anderson**  
+University of Cincinnati Blue Ash College  
 GitHub: [prof-anderson-uc](https://github.com/prof-anderson-uc)  
 Last updated: April 9, 2025
 
