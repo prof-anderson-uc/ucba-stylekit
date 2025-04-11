@@ -1,10 +1,21 @@
+/* ===================================
+   UCBA Stylekit CSS
+   Note: Designed to be used AFTER reset.css
+   =================================== */
 
+/* --------------------------------------------------
+   👇 Optional Variables for customization.
+   These make it easier to change the look/feel later.
+   You can ignore this section if you're new to CSS 
+-------------------------------------------------- */
 :root {
   /* Brand Colors */
   --color-primary: #e00122;
   --color-secondary: thistle;
   --color-primary-text: white;
-  --color-secondary-text: #333;
+  --color-secondary-text: #333333;
+
+
 
   /* Font Sizes */
   --font-base: 1rem;         /* 16px */
@@ -45,13 +56,7 @@ h4 {
 }
 
 
-/* ===================================
-   UCBA Stylekit CSS
-   Created by: Professor Eric Anderson
-   Title: Professor at the University of Cincinnati
-   GitHub: https://github.com/prof-anderson-uc
-   Note: Designed to be used AFTER reset.css
-   =================================== */
+
 
 /* === Base Reset Overrides === */
 
@@ -194,36 +199,59 @@ body {
  }
  
 
- /* === Spacing === */
+
+/* === Spacing === */
  
- /* Margin utilities */
-.m-1 { 
-   margin: 0.5rem; 
-}
+/* Margins on all four sides */
+.m-1 { margin: 0.5rem; }
+.m-2 { margin: 1rem; }
+.m-3 { margin: 1.5rem; }
 
-.mt-1 { 
-   margin-top: 0.5rem;
-}
+/* Margins only left and right sides */
+.ms-1 { margin-left: 0.5rem; margin-right: 0.5rem }
+.ms-2 { margin-left: 1rem; margin-right: 1rem }
+.ms-3 { margin-left: 1.5rem; margin-right: 1.5rem }
 
-.mb-1 {
-   margin-bottom: 0.5rem;
-}
+/* Margins only on the top */
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+
+/* Margins only on the bottom */
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+
  
- /* Padding utilities */
- .p-1 {
-   padding: 0.5rem;
-}
+/* Padding on all four sides */
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
 
- .px-1 {
-   padding-left: 0.5rem;
-   padding-right: 0.5rem;
- }
+/* Padding only left and right sides */
+.ps-1 { padding-left: 0.5rem; padding-right: 0.5rem; }
+.ps-2 { padding-left: 1rem; padding-right: 1rem; }
+.ps-3 { padding-left: 1.5rem; padding-right: 1.5rem; }
+
+/* Padding only on the top */
+.pt-1 { padding-top: .5rem; }
+.pt-2 { padding-top: 1rem; }
+.pt-3 { padding-top: 1.5rem; }
+
+/* Padding only on the bottom */
+.pb-1 { padding-bottom: 0.5rem;}
+.pb-2 { padding-bottom: 1rem;}
+.pb-3 { padding-bottom: 1.5rem; }
+
+
+
+
  
  /* === Colors === */
  
  /* Light background */
  .bg-light {
-   background-color: #f9f9f9;
+   background-color: #efefef;
 }
  
  /* Dark background with white text */
@@ -238,6 +266,11 @@ body {
   background-color: var(--color-primary);
   color: var(--color-primary-text);
 }
+
+.bg-secondary {
+   background-color: var(--color-secondary);
+   color: var(--color-secondary-text);
+ }
 
  
  /* Muted gray text */
@@ -262,6 +295,15 @@ body {
    cursor: pointer;
    font-size: 1rem;
    border-radius: 0.25rem; /* rounded corners */
+   text-decoration: none;
+   box-shadow: 2px 2px 3px -3px black;
+ }
+
+ a.btn:not(button, a.btn-primary, a.btn-secondary, a.btn-outline) {
+   text-decoration: none;
+   border: 1px solid silver;
+   color: black;
+   background-color: #e3e3e3;
  }
  
  /* Primary color button */
@@ -283,8 +325,8 @@ body {
  /* Outlined blue button */
  .btn-outline {
    background: none;
-   border: 1px solid #0066cc;
-   color: #0066cc;
+   border: 1px solid black;
+   color: black
  }
  
 
@@ -516,7 +558,7 @@ body {
 
 
 /* ========================================
-   ✍️ Typography Utilities
+   Typography Utilities
    Classes for font size, weight, alignment, style, and visual emphasis
 =========================================== */
 
@@ -552,8 +594,7 @@ body {
 
 /* Underline-style heading */
 .heading-underline {
-  /* display: inline-block; */
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #686868;
   padding-bottom: 0.25rem;
   margin-bottom: 0.5rem;
 }
@@ -605,4 +646,12 @@ body {
  .hero-text p {
    font-size: 1.25rem; /* Size of <p> text */
  }
+
+
+/*
+   Created by 
+   Professor Eric Anderson
+   University of Cincinnati
+   https://github.com/prof-anderson-uc
+*/
  

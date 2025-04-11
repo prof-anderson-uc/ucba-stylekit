@@ -18,17 +18,15 @@
          margin-bottom: 3rem;
       }
 
-      h2 {
-         margin-top: 2rem;
-         border-bottom: 2px solid #ddd;
-         padding-bottom: 0.5rem;
-      }
-
       .demo-block {
          background: white;
          padding: 1rem;
          border: 1px dashed #ccc;
          margin-top: 0.5rem;
+      }
+
+      code {
+         font-weight: bold;
       }
    </style>
 </head>
@@ -41,14 +39,14 @@
       <h2>Typography</h2>
       <div class="demo-block">
 
-         <p class="text-sm">This is small text using <code>.text-sm</code></p>
-         <p class="text-lg">This is large text using <code>.text-lg</code></p>
-         <p class="bold">This text is bold with <code>.bold</code></p>
-         <p class="italic">This text is italic with <code>.italic</code></p>
-         <p class="uppercase">This is uppercase using <code>.uppercase</code></p>
-         <p class="lead">This is a lead paragraph with <code>.lead</code></p>
-         <p class="text-muted">This is muted text using <code>.text-muted</code></p>
-         <p class="text-primary">This text has the defined primary-color using <code>.text-primary</code></p>
+         <p class="text-sm">This is small text using <code class="code-text">.text-sm</code></p>
+         <p class="text-lg">This is large text using <code class="code-text">.text-lg</code></p>
+         <p class="bold">This text is bold with <code class="code-text">.bold</code></p>
+         <p class="italic">This text is italic with <code class="code-text">.italic</code></p>
+         <p class="uppercase">This is uppercase using <code class="code-text">.uppercase</code></p>
+         <p class="lead">This is a lead paragraph with <code class="code-text">.lead</code></p>
+         <p class="text-muted">This is muted text using <code class="code-text">.text-muted</code></p>
+         <p class="text-primary">This text has the defined primary-color using <code class="code-text">.text-primary</code></p>
 
       </div>
    </section>
@@ -57,8 +55,8 @@
       <h2>Font Families</h2>
       <div class="demo-block">
 
-         <p class="text-serif">This is serif text (e.g., Georgia) using <code>.text-serif</code>.</p>
-         <p class="text-mono">This is monospace text (e.g., Courier) using <code>.text-mono</code>.</p>
+         <p class="text-serif">This is serif text (e.g., Georgia) using <code class="code-text">.text-serif</code>.</p>
+         <p class="text-mono">This is monospace text (e.g., Courier) using <code class="code-text">.text-mono</code>.</p>
 
       </div>
    </section>
@@ -67,8 +65,8 @@
       <h2>Text Alignment (Left / Right)</h2>
       <div class="demo-block">
 
-         <p class="text-left">This paragraph is <strong>left-aligned</strong> using <code>.text-left</code>.</p>
-         <p class="text-right">This paragraph is <strong>right-aligned</strong> using <code>.text-right</code>.</p>
+         <p class="text-left">This paragraph is <strong>left-aligned</strong> using <code class="code-text">.text-left</code>.</p>
+         <p class="text-right">This paragraph is <strong>right-aligned</strong> using <code class="code-text">.text-right</code>.</p>
 
       </div>
    </section>
@@ -79,10 +77,10 @@
       <h2>Text Effects</h2>
       <div class="demo-block">
 
-         <p class="shadow-text">This text has a shadow using <code>.shadow-text</code></p>
-         <p class="highlight">This text is highlighted with <code>.highlight</code></p>
-         <p class="quote">This is a block quote style using <code>.quote</code></p>
-         <p>This is <span class="code-text">inline code</span> using <code>.code-text</code></p>
+         <p class="shadow-text">This text has a shadow using <code class="code-text">.shadow-text</code></p>
+         <p class="highlight">This text is highlighted with <code class="code-text">.highlight</code></p>
+         <p class="quote">This is a block quote style using <code class="code-text">.quote</code></p>
+         <p>This is <span class="code-text">inline code</span> using <code class="code-text">.code-text</code></p>
 
       </div>
    </section>
@@ -106,14 +104,59 @@
 
          <br><!-- ⬅︎ ignore this -->
 
-         <h4 class="heading-underline">This is an Underlined Heading</h4>
+         <h4 class="heading-underline">I'm an Underlined Heading</h4>
          <p>Any heading can be given an underline by giving it the class  <code>.heading-underline</code></p>
 
 
       </div>
    </section>
 
+   <!-- SPACING -->
+   <section class="demo">
+      <h2>Spacing</h2>
+      <div class="demo-block">
 
+         <h3>Padding</h3>
+
+         <p class="p-1 bg-light">This has 0.5rem of padding on all four sides: <code class="code-text">.p-1</code></p>
+         <p class="p-2 bg-light">This has 1rem of padding on all four sides: <code class="code-text">.p-2</code></p>
+         <p class="p-3 bg-light">This has 1.5rem of padding on all four sides: <code class="code-text">.p-3</code></p>
+         <hr>
+         <p class="ps-1 bg-light">This has 0.5rem of padding only on the left/right: <code class="code-text">.ps-1</code></p>
+         <p class="ps-2 bg-light">This has 1rem of padding only on the left/right: <code class="code-text">.ps-2</code></p>
+         <p class="ps-3 bg-light">This has 1.5rem of padding only on the left/right: <code class="code-text"> .ps-3</code></p>
+         <hr>
+         <p class="pt-1 bg-light">This has 0.5rem of padding only on the top: <code class="code-text">.pt-1</code></p>
+         <p class="pt-2 bg-light">This has 1rem of padding only on the top: <code class="code-text">.pt-2</code></p>
+         <p class="pt-3 bg-light">This has 1.5rem of padding only on the left/right: <code class="code-text">.pt-3</code></p>
+         <hr>
+         <p class="pb-1 bg-light">This has 0.5rem of padding only on the bottom: <code class="code-text">.pb-1</code></p>
+         <p class="pb-2 bg-light">This has 1rem of padding only on the bottom: <code class="code-text">.pb-2</code></p>
+         <p class="pb-3 bg-light">This has 1.5rem of padding only on the bottom: <code class="code-text">.pb-3</code></p>
+
+         <hr>
+
+         <h3>Margins</h3>
+
+         <p class="m-1 p-1 bg-light">This has a 0.5rem margin on all sides: <code class="code-text">.m-1</code></p>
+         <p class="m-2 p-1 bg-light">This has a 1rem margin on all sides: <code class="code-text">.m-2</code></p>
+         <p class="m-3 p-1 bg-light">This has a 1.5rem margin on all sides: <code class="code-text">.m-3</code></p>
+         <hr>
+         <p class="ms-1 p-1 bg-light">This has a 0.5rem margin on the left/right: <code class="code-text">.ms-1</code></p>
+         <p class="ms-2 p-1 bg-light">This has a 1rem margin on the left/right: <code class="code-text">.ms-2</code></p>
+         <p class="ms-3 p-1 bg-light">This has a 1.5rem margin on the left/right: <code class="code-text">.ms-3</code></p>
+         <hr>
+         <p class="mt-1 p-1 bg-light">This has a 0.5rem margin on the top: <code class="code-text">.mt-1</code></p>
+         <p class="mt-2 p-1 bg-light">This has a 1rem margin on the top: <code class="code-text">.mt-2</code></p>
+         <p class="mt-3 p-1 bg-light">This has a 1.5rem margin on the left/right: <code class="code-text">.mt-3</code></p>
+         <hr>
+         <p class="mb-1 p-1 bg-light">This has a 0.5rem margin on the bottom: <code class="code-text">.mb-1</code></p>
+         <p class="mb-2 p-1 bg-light">This has a 1rem margin on the bottom: <code class="code-text">.mb-2</code></p>
+         <p class="mb-3 p-1 bg-light">This has a 1.5rem margin on the bottom: <code class="code-text">.mb-3</code></p>
+         
+
+      </div>
+   </section>
 
 
 
@@ -232,8 +275,8 @@
       <h2>Responsive Visibility</h2>
       <div class="demo-block">
 
-         <p class="show-mobile">👋 This only SHOWS on screens smaller than 600px.</p>
-         <p class="hide-mobile">🙈 This HIDES on small screens (less than 600px).</p>
+         <p class="show-mobile lead">👋 This is only shown on small screens and is hidden on large screens.<code class="code-text">.show-mobile</code></p>
+         <p class="hide-mobile lead">🙈 This is <strong>shown only on large screens</strong> and hidden on small screens less than 600px with <code class="code-text">.hide-mobile</code></p>
 
       </div>
    </section>
@@ -244,30 +287,14 @@
    <section class="demo">
       <h2>Buttons</h2>
       <div class="demo-block">
-
-         <button class="btn">Default Button</button>
-         <button class="btn btn-primary">Primary Button</button>
-         <button class="btn btn-secondary">Secondary Button</button>
-         <button class="btn btn-outline">Outline Button</button>
-
-      </div>
-   </section>
-
-   <!-- SPACING -->
-   <section class="demo">
-      <h2>Spacing</h2>
-      <div class="demo-block">
-
-         <p class="m-1 bg-light">This has margin <code>.m-1</code></p>
-         <p class="p-1 bg-light">This has padding <code>.p-1</code></p>
-         <p class="mt-1 mb-1 px-1 bg-light">Top/bottom margins and horizontal padding using <code>.mt-1</code>, <code>.mb-1</code>, <code>.px-1</code></p>
+         <p>Style a hyperlink or button with these class names:</p>
+         <a class="btn" href="#">.btn</a>
+         <a class="btn btn-primary" href="#">.btn .btn-primary</a>
+         <a class="btn btn-secondary" href="#">.btn .btn-secondary</a>
+         <a class="btn btn-outline" href="#">.btn .btn-outline</a>
 
       </div>
    </section>
-
-
-
-  
 
 
       <!-- COLORS -->
@@ -275,9 +302,10 @@
          <h2>Color Utilities</h2>
          <div class="demo-block">
    
-            <p class="bg-light">This is a light background using <code>.bg-light</code></p>
-            <p class="bg-dark">This is a dark background using <code>.bg-dark</code></p>
-            <p class="bg-primary">This is a primary color background using <code>.bg-primary</code></p>
+            <p class="bg-light p-1">This is a light background using <code>.bg-light</code></p>
+            <p class="bg-dark p-1">This is a dark background using <code>.bg-dark</code></p>
+            <p class="bg-primary p-1">This is a primary color background using <code>.bg-primary</code></p>
+            <p class="bg-secondary p-1">This is a primary color background using <code>.bg-primary</code></p>
    
          </div>
       </section>
@@ -287,13 +315,32 @@
       <h2>Image Styles</h2>
       <div class="demo-block">
 
-         <img src="https://picsum.photos/100" class="img-circle" alt="Circle image">
-         <img src="https://picsum.photos/100" class="img-thumbnail" alt="Thumbnail">
+         <h4 class="mb-1" style="font-weight: normal;">Floated to the left side: <code class="code-text">.img-left</code></h4>
+         
          <img src="https://picsum.photos/100" class="img-left" alt="Left float">
-         <img src="https://picsum.photos/100" class="img-right" alt="Right float">
-         <img src="https://picsum.photos/100" class="img-center" alt="Centered">
-         <img src="https://picsum.photos/150" class="img-photo" alt="Photo style">
+         <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis fugit hic cum doloremque rerum velit, aliquam a voluptates obcaecati distinctio! Quidem, nihil. Incidunt odit deserunt sit maxime mollitia aliquam neque?</p>
+         <hr style="clear: both">
 
+         <h4 class="mb-1" style="font-weight: normal;">Floated to the right side: <code class="code-text">.img-right</code></h4>
+         <img src="https://picsum.photos/100" class="img-right" alt="Right float">
+         <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis fugit hic cum doloremque rerum velit, aliquam a voluptates obcaecati distinctio! Quidem, nihil. Incidunt odit deserunt sit maxime mollitia aliquam neque?</p>
+         <hr style="clear: both">
+
+         <h4 class="mb-1" style="font-weight: normal;">In the center: <code class="code-text">.img-center</code></h4>
+         <img src="https://picsum.photos/100" class="img-center" alt="Centered">
+         <hr style="clear: both">
+         
+         <h4 class="mb-1" style="font-weight: normal;">Styled like a photograph: <code class="code-text">.img-photo</code></h4>
+         <img src="https://picsum.photos/150" class="img-photo" alt="Photo style">
+         <hr style="clear: both">
+         <h4 class="mb-1" style="font-weight: normal;">Circular shape: <code class="code-text">.img-circle</code></h4>
+         <img src="https://picsum.photos/100" class="img-circle" alt="Circle image">
+         <hr>
+         <h4 class="mb-1" style="font-weight: normal;">Thumbnail style: <code class="code-text">.img-thumbnail</code></h4>
+         <img src="https://picsum.photos/100" class="img-thumbnail" alt="Thumbnail">
+    
+
+         
       </div>
    </section>
 
@@ -302,20 +349,25 @@
       <h2>Width Utilities</h2>
       <div class="demo-block">
 
-         <div class="w-full bg-light">This takes up 100% width using <code>.w-full</code></div>
-         <div class="max-w-screen-sm bg-light">This is limited to 600px wide using <code>.max-w-screen-sm</code></div>
-         <div class="max-w-screen-md bg-light">This is limited to 800px wide using <code>.max-w-screen-md</code></div>
+         <div class="w-full p-1 bg-light">This takes up 100% width using <code>.w-full</code></div>
+
+         <hr>
+
+         <div class="max-w-screen-md m-1 p-1 bg-light">This is limited to 800px wide using <code>.max-w-screen-md</code></div>
+
+         <hr>
+
+         <div class="max-w-screen-sm p-1 bg-light">This is limited to 600px wide using <code>.max-w-screen-sm</code></div>
 
       </div>
-   </section>
-
-   <!-- UTILITY -->
-   <section class="demo">
-      <h2>Utility</h2>
 
       <div class="demo-block content">
          <p>This is wrapped in a <code>.content</code> class which keeps line length readable.</p>
       </div>
+
+
+   </section>
+
 
       <div class="divider"></div>
 
@@ -326,17 +378,17 @@
    <section class="demo">
       <h2>Effects</h2>
       <div class="demo-block">
-         <p><strong>Refresh your browser to see them load again.</strong></p>
+         <p class="mb-3"><strong>Refresh your browser to see them load again.</strong></p>
 
-         <p class="fade-in">This fades in immediately by using the class<br> <code>.fade-in</code></p>
+         <p class="fade-in">This fades in immediately by using: <code>.fade-in</code></p>
 
-         <p class="fade-in delay-1s">This fades in after a one second delay by using these <strong>two</strong> classes<br> <code>.fade-in</code>&nbsp;&nbsp;&nbsp;<code>.delay-1s</code></p>
+         <p class="fade-in delay-1s">This fades in after a one second delay by using both: <code>.fade-in</code>&nbsp;&nbsp;<code>.delay-1s</code></p>
 
-         <p class="fade-in delay-2s">This fades in after a two second delay by using these <strong>two</strong> classes<br> <code>.fade-in</code>&nbsp;&nbsp;&nbsp;<code>.delay-2s</code></p>
+         <p class="fade-in delay-2s">This fades in after a two second delay by using both: <code>.fade-in</code>&nbsp;&nbsp;<code>.delay-2s</code></p>
 
-         <p class="fade-in delay-3s">This fades in after a three second delay by using these <strong>two</strong> classes<br> <code>.fade-in</code>&nbsp;&nbsp;&nbsp;<code>.delay-3s</code></p>
+         <p class="fade-in delay-3s">This fades in after a three second delay by using both: <code>.fade-in</code>&nbsp;&nbsp;<code>.delay-3s</code></p>
 
-         <p class="hover-zoom">Hover over this text to see the zoom effect using<br> <code>.hover-zoom</code></p>
+         <p class="hover-zoom mt-2">Hover over this text to see the zoom effect using: <code>.hover-zoom</code></p>
 
       </div>
    </section>
