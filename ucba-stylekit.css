@@ -13,24 +13,24 @@
    This is a great way to apply a consistent color palette and scale
    across your entire site.
 
-   There are addition color themes at the very bottom of this file.
+   There are additional color themes at the very bottom of this file.
 =================================== */
 
 :root {
-   --color-primary: #334155;         /* Slate (dark cool gray) */
-   --color-secondary: #64748b;       /* Cool muted indigo-gray */
-   --color-primary-text: white;      /* Good contrast on slate */
-   --color-secondary-text: white;    /* Still accessible on secondary */
+   --color-primary: #334155; /* Slate (dark cool gray) */
+   --color-secondary: #64748b; /* Cool muted indigo-gray */
+   --color-primary-text: white; /* Good contrast on slate */
+   --color-secondary-text: white; /* Still accessible on secondary */
    
     
    /* === Font Sizes === */
-   --font-base: 1rem;               /* Base font size (16px is standard in browsers) */
-   --font-sm: 0.875rem;             /* Small text size (~14px) */
-   --font-lg: 1.25rem;              /* Large text size (~20px) */
-   --font-h1: 2.5rem;               /* Heading 1 (40px) - largest size for page titles */
-   --font-h2: 2rem;                 /* Heading 2 (32px) - section headings */
-   --font-h3: 1.5rem;               /* Heading 3 (24px) - subheadings or smaller sections */
-   --font-h4: 1.25rem;              /* Heading 4 (20px) - optional small headings */
+   --font-base: 1rem;    /* Base font size (16px is standard in browsers) */
+   --font-sm: 0.875rem;  /* Small text size (~14px) */
+   --font-lg: 1.25rem;   /* Large text size (~20px) */
+   --font-h1: 2.5rem;    /* Heading 1 (40px) - largest size for page titles */
+   --font-h2: 2rem;      /* Heading 2 (32px) - section headings */
+   --font-h3: 1.5rem;    /* Heading 3 (24px) - subheadings or smaller sections */
+   --font-h4: 1.25rem;   /* Heading 4 (20px) - optional small headings */
 }
 
  
@@ -72,9 +72,9 @@ h4 { font-size: var(--font-h4); }  /* Minor heading */
 .text-right  { text-align: right; }         /* Align right */
  
 /* === Font Family Options === */
-.text-serif { font-family: Georgia, serif; }      /* Serif font like Times */
-.text-mono  { font-family: monospace; }           /* Code or terminal font */
-.text-muted { color: #777; }                      /* Muted gray text */
+.text-serif { font-family: Georgia, serif; }  /* Serif font like Times */
+.text-mono  { font-family: monospace; }       /* Code or terminal font */
+.text-muted { color: #777; }                /* Muted gray text */
  
 /* === Visual Effects on Text === */
 .shadow-text {
@@ -86,7 +86,7 @@ h4 { font-size: var(--font-h4); }  /* Minor heading */
 }
  
 .quote {
-   border-left: 4px solid #ccc;     /* Visual bar for blockquotes */
+   border-left: 4px solid #ccc;   /* Visual bar for blockquotes */
    padding: 0.25rem 1rem;
    margin: 1rem 0;
    color: #555;
@@ -101,10 +101,10 @@ q:before, q:after {
  
 /* === Code-style Text Block === */
 .code-text {
-   font-family: monospace;          /* Monospace font for code */
-   background-color: #f4f4f4;       /* Light gray background */
-   padding: 0.25rem 0.5rem;         /* Spacing around code */
-   border-radius: 0.25rem;          /* Rounded edges */
+   font-family: monospace;      /* Monospace font for code */
+   background-color: #f4f4f4; /* Light gray background */
+   padding: 0.25rem 0.5rem;     /* Spacing around code */
+   border-radius: 0.25rem;      /* Rounded edges */
 }
  
 
@@ -159,11 +159,11 @@ q:before, q:after {
 .pb-3 { padding-bottom: 1.5rem; }
 
 /* === Line Height Utilities === */
-.lh-1 { line-height: 1; }      /* Tightest spacing */
-.lh-2 { line-height: 1.3; }    /* Compact spacing */
-.lh-3 { line-height: 1.5; }    /* Normal/comfortable spacing */
-.lh-4 { line-height: 1.8; }    /* Loose spacing */
-.lh-5 { line-height: 2; }      /* Extra loose spacing */
+.lh-1 { line-height: 1; }    /* Tightest spacing */
+.lh-2 { line-height: 1.3; }  /* Compact spacing */
+.lh-3 { line-height: 1.5; }  /* Normal/comfortable spacing */
+.lh-4 { line-height: 1.8; }  /* Loose spacing */
+.lh-5 { line-height: 2; }    /* Extra loose spacing */
 
 
 
@@ -186,26 +186,26 @@ q:before, q:after {
 }
  
 .bg-primary {
-   background-color: var(--color-primary);        /* Uses the brand's primary color */
-   color: var(--color-primary-text);              /* Ensures text is readable on the primary background */
+   background-color: var(--color-primary);  /* Uses the brand's primary color */
+   color: var(--color-primary-text);        /* Ensures text is readable on the primary background */
 }
  
 .bg-secondary {
-   background-color: var(--color-secondary);      /* Uses the brand's secondary color */
-   color: var(--color-secondary-text);            /* Ensures text is readable on the secondary background */
+   background-color: var(--color-secondary);  /* Uses the brand's secondary color */
+   color: var(--color-secondary-text);        /* Ensures text is readable on the secondary background */
 }
  
 /* === Text Colors === */
 .text-primary {
-   color: var(--color-primary);                   /* Brand primary color for text */
+   color: var(--color-primary);  /* Brand primary color for text */
 }
  
 .text-secondary {
-   color: var(--color-secondary);                 /* Brand secondary color for text */
+   color: var(--color-secondary);  /* Brand secondary color for text */
 }
  
 .text-muted {
-   color: #888;                                   /* Muted gray text, good for less important labels */
+   color: #888;   /* Muted gray text, good for less important labels */
 }
 
  
@@ -216,42 +216,67 @@ q:before, q:after {
    centered wrappers, readable sections, and consistent spacing.
 =================================== */
 
-.container {
-   max-width: 1200px; /* Sets a maximum width so content doesn’t stretch too wide */
-   margin: 0 auto;    /* Horizontally centers the container */
-   padding: 1rem;     /* Adds spacing inside the container */
-}
- 
-.w-full {
-   width: 100%; /* Makes an element expand the full width of its parent */
-}
- 
-.max-sm {
-   max-width: 600px;           /* Small max-width breakpoint */
-   margin-left: auto;
-   margin-right: auto;         /* Centered horizontally */
-}
- 
-.max-md {
-   max-width: 800px;           /* Medium max-width breakpoint */
-   margin-left: auto;
-   margin-right: auto;         /* Centered horizontally */
-}
- 
-.content {
-   max-width: 65ch;            /* Ideal line length for body text */
-   margin-left: auto;
-   margin-right: auto;
-   line-height: 1.6;           /* Improves readability */
-}
- 
-.box-sm {
-   width: 300px;               /* Fixed small width for callouts or cards */
-   margin: 0 auto;             /* Centered horizontally */
-   padding: 1rem;              /* Inner spacing */
+/* === Wrapper Classes (Page Structure) === */
+/* Use these to wrap major sections of your page layout, like header, main, or footer. 
+   All are horizontally centered for consistent appearance.
+*/
+
+.wrapper {
+  max-width: 960px;     /* Classic web layout width – great for student projects */
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 1rem; */
 }
 
+.wrapper-sm {
+  max-width: 720px;     /* Narrower width for focused content areas */
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 1rem; */
+}
+
+.wrapper-lg {
+  max-width: 1140px;    /* For wider screens and full-width sections */
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 1rem; */
+}
+
+.wrapper-xl {
+  max-width: 1320px;    /* Extra-wide layout – use with caution! */
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 1rem; */
+}
+  
+/* === Content Container === */
+/* Use this to limit line length of paragraphs or articles to improve readability.
+  Best used inside a wrapper or section. */
+.content {
+  max-width: 65ch;     /* Ideal line length for body text */
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* === Fluid Width === */
+/* Expands to full width of its parent – useful for banners or sections that stretch. */
+.w-full {
+  width: 100%;
+}
+
+/* === Fixed Boxes === */
+/* Helpful for small callouts, feature blocks, or cards */
+.box-sm {
+  width: 300px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+
  
+
 /* ===================================
    6. Flex & Grid Layout
    These classes make it easier to build flexible, responsive layouts.
@@ -272,8 +297,8 @@ q:before, q:after {
  
 .flex-wrap {
    display: flex;
-   flex-wrap: wrap;          /* Allows children to wrap to a new line */
-   gap: 1rem;                /* Adds space between wrapped items */
+   flex-wrap: wrap;  /* Allows children to wrap to a new line */
+   gap: 1rem;        /* Adds space between wrapped items */
 }
  
 .space-between {
@@ -282,8 +307,8 @@ q:before, q:after {
  
 /* === Grid Utilities === */
 .grid {
-   display: grid;            /* Turns the element into a grid container */
-   gap: 1rem;                /* Adds spacing between grid items */
+   display: grid;  /* Turns the element into a grid container */
+   gap: 1rem;      /* Adds spacing between grid items */
 }
  
 /* === Inline Block Utility === */
@@ -304,13 +329,13 @@ q:before, q:after {
 
 /* === Button Base Style === */
 .btn {
-   display: inline-block;            /* Make buttons respect padding/width */
-   padding: 0.5rem 1rem;             /* Vertical and horizontal padding */
-   border: none;                     /* Remove default border */
-   cursor: pointer;                  /* Show pointer cursor on hover */
-   font-size: 1rem;                  /* Match base font size */
-   border-radius: 0.25rem;           /* Slight rounding on corners */
-   text-decoration: none;            /* Remove underline from links */
+   display: inline-block;    /* Make buttons respect padding/width */
+   padding: 0.5rem 1rem;     /* Vertical and horizontal padding */
+   border: none;             /* Remove default border */
+   cursor: pointer;          /* Show pointer cursor on hover */
+   font-size: 1rem;          /* Match base font size */
+   border-radius: 0.25rem;   /* Slight rounding on corners */
+   text-decoration: none;    /* Remove underline from links */
    box-shadow: 2px 2px 3px -3px black; /* Subtle drop shadow */
 }
  
@@ -318,7 +343,7 @@ a.btn:not(button, a.btn-primary, a.btn-secondary, a.btn-outline) {
    text-decoration: none;
    border: 1px solid silver;
    color: black;
-   background-color: #e3e3e3;         /* Light gray background */
+   background-color: #e3e3e3;  /* Light gray background */
 }
  
 /* === Button Variations === */
@@ -333,36 +358,36 @@ a.btn:not(button, a.btn-primary, a.btn-secondary, a.btn-outline) {
 }
  
 .btn-outline {
-   background: none;                 /* Transparent background */
-   border: 1px solid black;          /* Simple black border */
-   color: black;                     /* Black text */
+   background: none;          /* Transparent background */
+   border: 1px solid black; /* Simple black border */
+   color: black;            /* Black text */
 }
  
 /* === Card Component === */
 .card {
-   border: 1px solid #ddd;           /* Light border */
-   border-radius: 0.5rem;            /* Rounded corners */
-   padding: 1rem;                    /* Internal spacing */
-   background-color: #fff;           /* White background */
+   border: 1px solid #ddd;   /* Light border */
+   border-radius: 0.5rem;      /* Rounded corners */
+   padding: 1rem;              /* Internal spacing */
+   background-color: #fff;   /* White background */
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);  /* Soft drop shadow */
-   margin-bottom: 1rem;             /* Space below each card */
+   margin-bottom: 1rem;        /* Space below each card */
 }
  
 /* === List Group Container === */
 .list-group {
-   list-style: none;                /* Remove bullets */
+   list-style: none;   /* Remove bullets */
    padding: 0;
    margin: 0;
    border: 1px solid #ccc;
-   border-radius: 0.5rem;           /* Rounded edges */
-   overflow: hidden;               /* Clip borders if needed */
+   border-radius: 0.5rem;   /* Rounded edges */
+   overflow: hidden;        /* Clip borders if needed */
 }
  
 /* === List Group Item === */
 .list-group-item {
-   padding: 0.75rem 1rem;           /* Internal spacing */
-   border-bottom: 1px solid #ccc;   /* Divider line */
-   background-color: #f9f9f9;       /* Light gray background */
+   padding: 0.75rem 1rem;  /* Internal spacing */
+   border-bottom: 1px solid #ccc;  /* Divider line */
+   background-color: #f9f9f9;  /* Light gray background */
 }
  
 /* Remove border on last item to avoid double line */
@@ -372,105 +397,16 @@ a.btn:not(button, a.btn-primary, a.btn-secondary, a.btn-outline) {
  
 /* Hover effect for interactivity */
 .list-group-item:hover {
-   background-color: #e6f0ff;       /* Subtle blue highlight */
+   background-color: #e6f0ff;   /* Subtle blue highlight */
 }
  
-/* === Default spacing for normal unordered/ordered lists === */
-ul:not(.list-group),
-ol:not(.list-group) {
-   margin-left: 1.5rem;             /* Restore typical browser list spacing */
+/* === Add margin to regular lists for better readability, but remove it for lists inside navigation areas or ones using the .list-group layout class. === */
+ul:not(.list-group):not(nav ul):not(nav * ul),
+ol:not(.list-group):not(nav ol):not(nav * ol) {
+  margin-left: 1.5rem;  /* Typical spacing for unordered and ordered lists */
 }
 
 
-
-/* ===================================
-   7. Components (Buttons, Cards, Lists)
-   These reusable styles create common UI elements.
-   Buttons are styled links or form elements.
-   Cards are boxed content blocks with padding and shadow.
-   List groups help format menus, feature lists, and more.
-=================================== */
-
-/* === Button Base Style === */
-.btn {
-   display: inline-block;            /* Make buttons respect padding/width */
-   padding: 0.5rem 1rem;             /* Vertical and horizontal padding */
-   border: none;                     /* Remove default border */
-   cursor: pointer;                  /* Show pointer cursor on hover */
-   font-size: 1rem;                  /* Match base font size */
-   border-radius: 0.25rem;           /* Slight rounding on corners */
-   text-decoration: none;            /* Remove underline from links */
-   box-shadow: 2px 2px 3px -3px black; /* Subtle drop shadow */
-}
- 
-a.btn:not(button, a.btn-primary, a.btn-secondary, a.btn-outline) {
-   text-decoration: none;
-   border: 1px solid silver;
-   color: black;
-   background-color: #e3e3e3;         /* Light gray background */
-}
- 
-/* === Button Variations === */
-.btn-primary {
-   background-color: var(--color-primary);   /* Primary theme color */
-   color: var(--color-primary-text);         /* Contrast text color */
-}
- 
-.btn-secondary {
-   background-color: var(--color-secondary); /* Secondary theme color */
-   color: var(--color-secondary-text);       /* Contrast text color */
-}
- 
-.btn-outline {
-   background: none;                 /* Transparent background */
-   border: 1px solid black;          /* Simple black border */
-   color: black;                     /* Black text */
-}
- 
-/* === Card Component === */
-.card {
-   border: 1px solid #ddd;           /* Light border */
-   border-radius: 0.5rem;            /* Rounded corners */
-   padding: 1rem;                    /* Internal spacing */
-   background-color: #fff;           /* White background */
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);  /* Soft drop shadow */
-   margin-bottom: 1rem;             /* Space below each card */
-}
- 
- /* === List Group Container === */
-.list-group {
-   list-style: none;                /* Remove bullets */
-   padding: 0;
-   margin: 0;
-   border: 1px solid #ccc;
-   border-radius: 0.5rem;           /* Rounded edges */
-   overflow: hidden;               /* Clip borders if needed */
-}
- 
-/* === List Group Item === */
-.list-group-item {
-   padding: 0.75rem 1rem;           /* Internal spacing */
-   border-bottom: 1px solid #ccc;   /* Divider line */
-   background-color: #f9f9f9;       /* Light gray background */
-}
- 
-/* Remove border on last item to avoid double line */
-.list-group-item:last-child {
-   border-bottom: none;
-}
- 
-/* Hover effect for interactivity */
-.list-group-item:hover {
-   background-color: #e6f0ff;       /* Subtle blue highlight */
-}
- 
-/* === Default spacing for normal unordered/ordered lists === */
-ul:not(.list-group),
-ol:not(.list-group) {
-   margin-left: 1.5rem;             /* Restore typical browser list spacing */
-}
-
- 
 
 
 /* ===================================
@@ -482,64 +418,195 @@ ol:not(.list-group) {
 
 /* === Responsive Image === */
 .img-responsive {
-   max-width: 100%;                    /* Scales down to fit parent container */
-   height: auto;                       /* Maintains aspect ratio */
-   border-radius: 0.5rem;              /* Soft rounded corners */
+   max-width: 100%;    /* Scales down to fit parent container */
+   height: auto;       /* Maintains aspect ratio */
+   border-radius: 0.5rem;  /* Soft rounded corners */
    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Subtle drop shadow */
    display: block;
-   margin: 0 auto;                     /* Center image horizontally */
+   margin: 0 auto;   /* Center image horizontally */
 }
  
 /* === Circular Image === */
 .img-circle {
-   border-radius: 50%;                /* Makes image fully round */
+   border-radius: 50%;  /* Makes image fully round */
    display: block;
-   margin: 0 auto;                    /* Center it horizontally */
+   margin: 0 auto;      /* Center it horizontally */
 }
  
 /* === Framed Thumbnail Image === */
 .img-thumbnail {
-   border: 1px solid #ddd;            /* Light gray border */
-   padding: 0.25rem;                  /* Padding inside border */
-   border-radius: 0.25rem;            /* Subtle rounding */
-   display: inline-block;             /* Allows sizing and alignment */
-   background-color: white;           /* White frame background */
+   border: 1px solid #ddd;  /* Light gray border */
+   padding: 0.25rem;          /* Padding inside border */
+   border-radius: 0.25rem;    /* Subtle rounding */
+   display: inline-block;     /* Allows sizing and alignment */
+   background-color: white; /* White frame background */
 }
  
 /* === Polaroid-style Framed Image === */
 .img-polaroid {
-   border: 4px solid white;           /* Thick white border */
+   border: 4px solid white;   /* Thick white border */
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow */
    background-color: white;
-   padding: 0.5rem;                   /* Padding inside white frame */
+   padding: 0.5rem;             /* Padding inside white frame */
    display: inline-block;
 }
  
 /* === Float Left Image === */
 .img-left {
-   float: left;                       /* Align image to the left */
-   margin-right: 2rem;                /* Space between image and text */
-   margin-bottom: 1rem;              /* Space below image */
+   float: left;         /* Align image to the left */
+   margin-right: 2rem;  /* Space between image and text */
+   margin-bottom: 1rem; /* Space below image */
 }
  
  /* === Float Right Image === */
 .img-right {
-   float: right;                      /* Align image to the right */
-   margin-left: 2rem;                 /* Space between image and text */
+   float: right;      /* Align image to the right */
+   margin-left: 2rem; /* Space between image and text */
    margin-bottom: 1rem;
 }
  
 /* === Centered Image with Margin === */
 .img-center {
    display: block;
-   margin: 1rem auto;                 /* Center horizontally with spacing */
+   margin: 1rem auto;  /* Center horizontally with spacing */
 }
+
+
+/* ===================================
+   9. Image Gallery Styles
+   Prebuilt responsive layout for displaying groups of images.
+   Works great for portfolios, product showcases, or cat galleries!
+=================================== */
+
+/* === Gallery Container === */
+.gallery {
+  display: grid;
+  gap: 1rem;                    /* Space between images */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  margin: 2rem auto;            /* Space around gallery */
+}
+
+/* === Gallery Image Styling === */
+/* .gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;        
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+/* === Optional Hover Effect === */
+/* .gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+} */
+
+/* === Optional Caption Style === */
+/* .gallery figure {
+  margin: 0;
+  text-align: center;
+} */
+
+/* ===================================
+   Gallery System
+   Modular classes for flexible, student-friendly image galleries.
+   Use grid + column classes to control layout. Easy to use and teach!
+=================================== */
+
+/* === Base Gallery === */
+.gallery {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+
+/* === Fixed Column Versions === */
+.gallery-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* === Responsive Version === */
+/* Mobile-first: single column */
+.gallery-responsive {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* Add more columns as screen width increases */
+@media (width > 600px) {
+  .gallery-responsive.gallery-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width > 900px) {
+  .gallery-responsive.gallery-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width > 1200px) {
+  .gallery-responsive.gallery-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 
+
+<!-- Fixed 3-column gallery -->
+<div class="gallery gallery-cols-3">
+  <!-- images go here -->
+</div>
+
+<!-- Responsive gallery that adapts from 1 to 2 to 3 to 4 columns -->
+<div class="gallery gallery-responsive gallery-cols-2 gallery-cols-3 gallery-cols-4">
+  <!-- images go here -->
+</div>
+
+*/
+
+
+/* === Image Styling === */
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* === Optional Caption Styling === */
+.gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+.gallery figcaption {
+  font-size: 0.875rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
 
  
 
 
 /* ===================================
-   9. Toggle Boxes
+   10. Toggle Boxes
    These use the <details> and <summary> elements to create
    collapsible sections that expand or contract when clicked.
    Great for FAQs, extra notes, or optional instructions.
@@ -547,98 +614,107 @@ ol:not(.list-group) {
 
 /* === Outer container for the toggle box === */
 details.toggle-box {
-   border: 1px solid #ccc;                    /* Outline around the whole box */
-   border-top-left-radius: 0.5rem;            /* Rounded top-left corner */
-   border-top-right-radius: 0.5rem;           /* Rounded top-right corner */
-   margin-bottom: 1rem;                       /* Space below the box */
-   background-color: #fdfdfd;                 /* Light background */
-   overflow: hidden;                          /* Prevents content overflow */
+   border: 1px solid #ccc;        /* Outline around the whole box */
+   border-top-left-radius: 0.5rem;  /* Rounded top-left corner */
+   border-top-right-radius: 0.5rem; /* Rounded top-right corner */
+   margin-bottom: 1rem;             /* Space below the box */
+   background-color: #fdfdfd;     /* Light background */
+   overflow: hidden;                /* Prevents content overflow */
 }
  
 /* === Header area that is always visible === */
 summary.toggle-box-title {
-   background-color: #eee;                    /* Light gray background */
-   color: black;                              /* Text color */
+   background-color: #eee;         /* Light gray background */
+   color: black;                   /* Text color */
    font-weight: bold;
-   padding: 0.75rem 1rem;                     /* Padding inside the header */
-   cursor: pointer;                           /* Cursor changes on hover */
-   border-bottom: 1px solid #ccc;             /* Border under the header */
+   padding: 0.75rem 1rem;            /* Padding inside the header */
+   cursor: pointer;                  /* Cursor changes on hover */
+   border-bottom: 1px solid #ccc;  /* Border under the header */
    border-top-left-radius: 0.5rem;
    border-top-right-radius: 0.5rem;
-   list-style: revert;                        /* Keep native arrow icon on the left */
-   display: list-item;                        /* Necessary for arrow to show */
+   list-style: revert;               /* Keep native arrow icon on the left */
+   display: list-item;               /* Necessary for arrow to show */
 }
  
 /* === Inner content that shows when opened === */
 .toggle-box-content {
-   padding: 1rem;                             /* Padding inside content area */
-   background-color: white;                  /* Plain white background */
+   padding: 1rem;    /* Padding inside content area */
+   background-color: white;  /* Plain white background */
 }
 
  
 
 /* ===================================
-   10. Utilities
+   11. Utilities
    These are small, helpful classes that add specific styles.
    Useful for visual separation, custom heading styles, or quick layout tweaks.
 =================================== */
 
 /* === Horizontal Divider Line === */
 .divider {
-   border-top: 1px solid #cccccc;     /* Thin horizontal line */
-   margin: 2rem 0;                    /* Space above and below the line */
+   border-top: 1px solid #cccccc;  /* Thin horizontal line */
+   margin: 2rem 0;                   /* Space above and below the line */
 }
  
 /* === Underlined Heading === */
 .heading-underline {
    border-bottom: 1px solid #686868;  /* Line under the heading */
-   padding-bottom: 0.25rem;           /* Space between text and underline */
-   margin-bottom: 0.5rem;             /* Space below heading block */
+   padding-bottom: 0.25rem;  /* Space between text and underline */
+   margin-bottom: 0.5rem;    /* Space below heading block */
 }
 
  
 
 /* ===================================
-   11. Responsive Helpers
+   12. Responsive Helpers
    These classes help make layouts adapt to different screen sizes.
    Use them to create columns or toggle visibility based on screen width.
 =================================== */
 
 /* === Responsive Grid Base === */
 .responsive-grid {
-   display: grid;                      /* Enable CSS grid layout */
-   gap: 1rem;                          /* Space between grid items */
-   grid-template-columns: 1fr;        /* Default to single column */
+  display: grid;               /* Enable CSS grid layout */
+  gap: 1rem;                   /* Space between grid items */
+  grid-template-columns: 1fr;  /* Default to single column */
 }
- 
- /* === Responsive Column Helpers === */
-@media (min-width: 600px) {
-   .responsive-grid-2 {
-     grid-template-columns: repeat(2, 1fr);  /* Two equal columns */
-   }
-   .responsive-grid-3 {
-     grid-template-columns: repeat(3, 1fr);  /* Three equal columns */
-   }
+
+/* === Responsive Column Helpers === */
+/* On screens wider than 600px, switch to multiple columns */
+@media (width > 600px) {
+  .responsive-grid-2 {
+    grid-template-columns: repeat(2, 1fr);  /* Two equal columns */
+  }
+
+  .responsive-grid-3 {
+    grid-template-columns: repeat(3, 1fr);  /* Three equal columns */
+  }
 }
- 
+
 /* === Mobile Visibility Control === */
+/* By default (small screens), hide .hide-mobile and show .show-mobile */
 .hide-mobile {
-   display: none;  /* Hides element on small screens */
+  display: none;   /* Hides element on small screens */
 }
- 
-@media (min-width: 600px) {
-   .hide-mobile {
-     display: block; /* Shows element on larger screens */
-   }
-   .show-mobile {
-     display: none;  /* Hides this version on larger screens */
-   }
+.show-mobile {
+  display: block;  /* Shows element on small screens */
 }
+
+/* On screens wider than 600px, reverse visibility */
+@media (width > 600px) {
+  .hide-mobile {
+    display: block;  /* Shows element on larger screens */
+  }
+  .show-mobile {
+    display: none;   /* Hides this version on larger screens */
+  }
+}
+
+
 
  
 
 /* ===================================
-   12. Effects & Animations
+   13. Effects & Animations
    These classes add motion and interactivity to your site.
    Use them to draw attention to content on load or hover.
 =================================== */
@@ -650,7 +726,7 @@ summary.toggle-box-title {
  
 /* === Base Fade-in Effect === */
 .fade-in {
-   opacity: 0;                             /* Start fully transparent */
+   opacity: 0;   /* Start fully transparent */
    animation: fadeIn 2s ease-in forwards; /* Animate to full opacity */
 }
  
@@ -661,13 +737,13 @@ summary.toggle-box-title {
  
 /* === Hover Zoom Effect === */
 .hover-zoom {
-   display: inline-block;            /* Ensure element can transform */
+   display: inline-block;           /* Ensure element can transform */
    transition: transform 0.3s ease; /* Smooth zoom effect */
    transform-origin: center;        /* Scale from center */
 }
  
 .hover-zoom:hover {
-   transform: scale(1.05);          /* Slightly enlarge on hover */
+   transform: scale(1.05);  /* Slightly enlarge on hover */
 }
  
 /* === Hover Glow Effect === */
@@ -694,7 +770,7 @@ summary.toggle-box-title {
 
 
 /* ===================================
-   13. Hero Banner
+   14. Hero Banner
    A large, full-width section often used at the top of a page.
    This includes a background image, dark gradient overlay,
    and centered headline content.
@@ -702,52 +778,52 @@ summary.toggle-box-title {
 
 /* === Hero Banner Container === */
 .hero-banner {
-   height: 300px;                         /* Height of the hero section */
-   position: relative;                   /* Allows for absolute overlay */
-   display: flex;                        /* Flex to center content */
-   align-items: center;                 /* Vertically center text */
-   justify-content: center;             /* Horizontally center text */
-   text-align: center;                  /* Center-align text */
-   background-size: cover;              /* Make image fill the area */
-   background-position: center;         /* Center the image in the box */
-   background-repeat: no-repeat;        /* Don’t repeat the background image */
+   height: 300px;                /* Height of the hero section */
+   position: relative;           /* Allows for absolute overlay */
+   display: flex;                /* Flex to center content */
+   align-items: center;          /* Vertically center text */
+   justify-content: center;      /* Horizontally center text */
+   text-align: center;           /* Center-align text */
+   background-size: cover;       /* Make image fill the area */
+   background-position: center;  /* Center the image in the box */
+   background-repeat: no-repeat; /* Don’t repeat the background image */
 }
  
 /* === Gradient Overlay on the Image === */
 .hero-banner::before {
-   content: "";                          /* Required to create a pseudo-element */
+   content: "";          /* Required to create a pseudo-element */
    position: absolute;
-   inset: 0;                             /* Covers the full hero area */
+   inset: 0;             /* Covers the full hero area */
    background: linear-gradient(
      rgba(0, 0, 0, 0.6),
      rgba(0, 0, 0, 0.2)
-   );                                    /* Darkens top, fades to lighter bottom */
-   z-index: 1;                           /* Places it behind the text */
+   );                    /* Darkens top, fades to lighter bottom */
+   z-index: 1;           /* Places it behind the text */
 }
  
 /* === Text Block Inside the Hero === */
 .hero-text {
-   position: relative;                  /* Bring text above the overlay */
+   position: relative;   /* Bring text above the overlay */
    z-index: 2;
-   max-width: 90%;                      /* Keep lines from getting too long */
+   max-width: 90%;       /* Keep lines from getting too long */
    padding: 1rem;
    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Add contrast for readability */
    color: white;                        /* Text color */
 }
  
 .hero-text h2 {
-   font-size: 2.5rem;                   /* Main headline size */
-   margin-bottom: 0.5rem;               /* Space between heading and subtext */
+   font-size: 2.5rem;      /* Main headline size */
+   margin-bottom: 0.5rem;  /* Space between heading and subtext */
 }
  
 .hero-text p {
-   font-size: 1.25rem;                  /* Supporting text size */
+   font-size: 1.25rem;     /* Supporting text size */
 }
 
 
 /* ===================================
-   Optional Theme Variations
-   (Uncomment one to override default colors)
+   15. Optional Theme Variations
+   (Uncomment one to override the default colors)
 =================================== */
 
 
